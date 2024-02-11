@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Phạm Ngọc Quân</title>
   <subtitle>Welcome to my page. Have a nice day! </subtitle>
-  <updated>2024-02-11T23:52:34+07:00</updated>
+  <updated>2024-02-12T00:04:06+07:00</updated>
   <author>
     <name>Pham Ngoc Quan</name>
     <uri>http://localhost:4000/</uri>
@@ -46,21 +46,13 @@
 
 
 
-      1.1: Thế các giá trị đặc biệt
+      Trong rất nhiều bài toán, việc sử dụng những phép thế hợp lí là mấu chốt để giải quyết bài toán. Trong chương 1, tôi xin giới thiệu một số phép thế thường được sử dụng để giải phương trình hàm.
 
-Bài toán 1: Tìm tất cả hàm số \(f \colon \mathbb{R} \to \mathbb{R}\) thỏa mãn:
+Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là Thế các giá trị đặc biệt và Thế các biểu thức chứa biến.
 
-\[f(x-1) f\left(y^{2}\right)=y f(x y)-y f(y), \forall x, y \in \mathbb{R}    \hspace{2cm} (1)\]
+1.1: Thế các giá trị đặc biệt
 
-$ \hspace{7cm} $ (Chọn đội tuyển KHTN 2015)
-
-+) Trong (1) thay \(x\) bởi 1, \(y\) bởi 0 ta có :
-
-\[f(0)^{2}=0 \Leftrightarrow f(0)=0\]
-
-+) Trong (1) thay \(x\) bởi 0 , \(y\) bởi 1 ta có :
-
-...
+Bài toán 1: Tìm tất cả hà...
     </summary>
   
 
