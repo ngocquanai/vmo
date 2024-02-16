@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Phạm Ngọc Quân</title>
   <subtitle>Welcome to my page. Have a nice day! </subtitle>
-  <updated>2024-02-14T23:04:56+07:00</updated>
+  <updated>2024-02-16T13:19:39+07:00</updated>
   <author>
     <name>Pham Ngoc Quan</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,47 @@
 
   
   <entry>
+    <title>CHƯƠNG 2 CÁC KĨ THUẬT KHÁC GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 1)</title>
+    <link href="http://localhost:4000/posts/ch%C6%B0%C6%A1ng-2-part-1/" rel="alternate" type="text/html" title="CHƯƠNG 2 CÁC KĨ THUẬT KHÁC GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 1)" />
+    <published>2024-02-16T11:10:05+07:00</published>
+  
+    <updated>2024-02-16T11:10:05+07:00</updated>
+  
+    <id>http://localhost:4000/posts/ch%C6%B0%C6%A1ng-2-part-1/</id>
+    <content src="http://localhost:4000/posts/ch%C6%B0%C6%A1ng-2-part-1/" />
+    <author>
+      <name>Pham Ngoc Quan</name>
+    </author>
+
+  
+    
+    <category term="Chương 2" />
+    
+    <category term="Phần 1" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Trong chương hai này, tôi xin giới thiệu một số kĩ thuật khác cũng được sử dụng thường xuyên khi giải phương trình hàm, bao gồm điểm bất động, thêm biến, tính bằng hai cách, NQR, dãy số và sử dụng bất đẳng thức. Những phương pháp này nếu sử dụng hợp lí sẽ là một bước quan trọng để chúng ta giải quyết các bài toán phương trình hàm. Trước hết, trong phần 1 này, chúng ta sẽ cùng tìm hiểu hai phươn...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>CHƯƠNG 1 CÁC PHƯƠNG PHÁP THẾ GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 2)</title>
     <link href="http://localhost:4000/posts/ch%C6%B0%C6%A1ng-1-part-2/" rel="alternate" type="text/html" title="CHƯƠNG 1 CÁC PHƯƠNG PHÁP THẾ GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 2)" />
-    <published>2024-02-13T00:31:33+07:00</published>
+    <published>2024-02-14T11:10:05+07:00</published>
   
-    <updated>2024-02-13T00:31:33+07:00</updated>
+    <updated>2024-02-14T11:10:05+07:00</updated>
   
     <id>http://localhost:4000/posts/ch%C6%B0%C6%A1ng-1-part-2/</id>
     <content src="http://localhost:4000/posts/ch%C6%B0%C6%A1ng-1-part-2/" />
@@ -50,7 +86,7 @@
 
       Trong rất nhiều bài toán, việc sử dụng những phép thế hợp lí là mấu chốt để giải quyết bài toán. Trong chương 1, tôi xin giới thiệu một số phép thế thường được sử dụng để giải phương trình hàm.
 
-Trong bài viết phần 2 của chương 1 sẽ giới thiệu hai phương pháp thế còn lại đó là Thế biến nửa đối xứng và Thế biến tạo hệ phương trình.
+Trong bài viết phần 2 của chương 1 sẽ giới thiệu hai phương pháp thế còn lại đó là THẾ BIẾN NỬA ĐỐI XỨNG và THẾ BIẾN TẠO HỆ PHƯƠNG TRÌNH.
 
 1.3: THẾ BIẾN NỬA ĐỐI XỨNG
 
@@ -92,11 +128,45 @@ Thế biến nửa đối xứng chính là thế ...
 
       Trong rất nhiều bài toán, việc sử dụng những phép thế hợp lí là mấu chốt để giải quyết bài toán. Trong chương 1, tôi xin giới thiệu một số phép thế thường được sử dụng để giải phương trình hàm.
 
-Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là Thế các giá trị đặc biệt và Thế các biểu thức chứa biến.
+Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là THẾ CÁC GIÁ TRỊ ĐẶC BIỆTvà THẾ CÁC BIỂU THỨC CHỨA BIẾN.
 
 1.1: THẾ CÁC GIÁ TRỊ ĐẶC BIỆT
 
-Bài toán 1: Tìm tất cả hà...
+Bài toán 1: Tìm tất cả hàm...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>LỜI NÓI ĐẦU</title>
+    <link href="http://localhost:4000/posts/l%E1%BB%9Di-n%C3%B3i-%C4%91%E1%BA%A7u/" rel="alternate" type="text/html" title="LỜI NÓI ĐẦU" />
+    <published>2024-01-01T05:41:23+07:00</published>
+  
+    <updated>2024-01-01T05:41:23+07:00</updated>
+  
+    <id>http://localhost:4000/posts/l%E1%BB%9Di-n%C3%B3i-%C4%91%E1%BA%A7u/</id>
+    <content src="http://localhost:4000/posts/l%E1%BB%9Di-n%C3%B3i-%C4%91%E1%BA%A7u/" />
+    <author>
+      <name>Pham Ngoc Quan</name>
+    </author>
+
+  
+    
+    <category term="Lời nói đầu" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Trong quá trình ôn thi VMO, tôi thường xuyên tìm kiếm những bài toán từ nhiều nguồn khác nhau để luyện tập mỗi ngày. Quá trình đó giúp tôi tích lũy được những kiến thức đa dạng về nhiều phần khác nhau để chuẩn bị cho kì thi VMO. Trong đó, tôi đặc biệt hứng thú với giải phương trình hàm và đó cũng là phần tôi chú trọng làm nhiều nhất. Tôi đã dành một lượng lớn thời gian để học và tìm hiểu về các...
     </summary>
   
 

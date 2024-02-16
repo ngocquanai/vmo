@@ -32,8 +32,8 @@
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="CHƯƠNG 1 CÁC PHƯƠNG PHÁP THẾ GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 1)" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Trong rất nhiều bài toán, việc sử dụng những phép thế hợp lí là mấu chốt để giải quyết bài toán. Trong chương 1, tôi xin giới thiệu một số phép thế thường được sử dụng để giải phương trình hàm. Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là Thế các giá trị đặc biệt và Thế các biểu thức chứa biến. 1.1: THẾ CÁC GIÁ TRỊ ĐẶC BIỆT Bài toán 1: Tìm tất cả hàm số \(f \colon \mathbb{R} \to \mathbb{R}\) thỏa mãn: [f(x-1) f\left(y^{2}\right)=y f(x y)-y f(y), \forall x, y \in \mathbb{R} \hspace{2cm} (1)] $ \hspace{8.5cm} $ (Chọn đội tuyển KHTN 2015) +) Trong (1) thay \(x\) bởi 1, \(y\) bởi 0 ta có : [f(0)^{2}=0 \Leftrightarrow f(0)=0] +) Trong (1) thay \(x\) bởi 0 , \(y\) bởi 1 ta có : [\begin{aligned} &amp; f(-1) f(1)=-f(1) \Leftrightarrow &amp; {\left[\begin{array}{l} f(1)=0 f(-1)=-1 \end{array}\right.} \end{aligned}] +) Nếu \(f(1)=0\), trong (1) thay \(y\) bởi 1 ta có [f(x)=0, \quad \forall x \in \mathbb{R}] +) Nếu \(f(-1) = -1\), Trong (1) thay \(x\) bởi 0 ta có: [\begin{aligned} &amp; f\left(y^{2}\right)=y f(y) \hspace{2cm} (2) \Rightarrow &amp; f(1)=-f(-1)=1 \end{aligned}] +) Tư (1), (2) ta có: [f(x-1) f(y)=f(x y)-f(y), \forall y \neq 0] Kết hợp $f(0)=0$ ta có [f(x-1) f(y)=f(x y)-f(y), \forall x, y \in \mathbb{R} \hspace{2cm} (3)] +) Trong (1) thay y bởi 1 ta có [f(x-1)=f(x)-1 \hspace{2cm} (4)] +) Từ $(3),(4)$ ta có $f(x y)=f(x) f(y), \forall x, y \in \mathbb{R}$ [\Rightarrow f\left(x^{2}\right)=f(x)^{2} \hspace{2cm} (5)] Từ (2), (5) suy ra $f(x)^{2}=x f(x)$ [\Leftrightarrow\left[\begin{array}{l} f(x)=x, f(x)=0, \end{array}, \forall x \in \mathbb{R}\right.] Nếu tồn tại $ a, b \neq 0$ sao cho [\left{\begin{array}{l}f(a)=0 \ f(b)=b\end{array}\right.] Từ (4) ta có $f(a-1)=-1$ Từ (5) ta có $f((a-1) b)=f(a-1) f(b)=-b$ Mà $b \neq 0 \Rightarrow(a-1) b=-b \Rightarrow a=0$ \; (vô lí) Nên ta có [\left[\begin{array}{l}f(x)=x, \forall x \in \mathbb{R} f(x)=0, \forall x \in \mathbb{R}\end{array}\right.] Thử lại ta thấy 2 hàm số này đều thỏa mãn điều kiện bài toán. Bài toán 2: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x f(x)+f(x) f(y)+y-1)=f(x f(x)+x y)+y-1 \hspace{2cm} (6)] $\hspace{10cm}$ (Korea MO 2014) +) Trong (6) thay $x$ bởi $0$ ta có: [f(f(0) f(y)+y-1)=f(0)+y-1 \hspace{2cm} (7)] +) Trong (7) thay $y$ bởi $1-f(0)$ ta có: [f(f(0) f(1-f(0))-f(0))=0] Đặt $c=f(0) f(1-f(0))-f(0) \Rightarrow f(c)=0$ +) Trong (6) thay $x$ bởi $c$ ta có: [f(y-1)=f(c y)+y-1 \hspace{2cm} (8)] +) Trong (8) thay $y$ bởi 1 ta có: [f(0)=f(c)=0] +) Trong (6) thay $x$ bởi 0 ta có: [\begin{aligned} &amp; f(y-1)=y-1 \Rightarrow &amp; f(x)=x, \forall x \in \mathbb{R} \end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Bài toán 3: Tìm tất cả hàm số $f \colon \mathbb{R^{+}} \to \mathbb{R^{+}}$ thỏa mãn: [f\left(x^{3}+y\right)=f(x)^{3}+\frac{f(x y)}{f(x)}, \forall x, y&gt;0 \hspace{2cm} (9)] $\hspace{9cm}$ (Chọn đội tuyển KHTN 2009) Đặt $f(1)=a \quad (a&gt;0)$ +) Trong (9) thay $y$ bởi 1 ta có: [f\left(x^{3}+1\right)=f\left(x^{3}\right)+1 \hspace{2cm} (10)] +) Trong (9) thay $x$ bởi 1 ta có : [f(y+1)=f(1)^{3}+1 \hspace{2cm} (11)] Sử dụng (10), (11) ta lần lượt tính được : [\begin{aligned} &amp; f(2)=a^{3}+1 &amp; f(3)=a^{3}+\frac{a^{3}+1}{a}=a^{3}+a^{2}+\frac{1}{a} &amp; f(9)=f(2)^{3}+1=\left(a^{3}+1\right)^{3}+1=a^{9}+3 a^{6}+3 a^{3}+2 \end{aligned}] Mặt khác ta có: [\begin{aligned} &amp; f(y+8)=a^{3}+\frac{f(y+7)}{a}=a^{3}+\frac{1}{a}\left(a^{3}+\frac{f(y+6)}{a}\right) &amp; =a^{3}+a^{2}+\frac{1}{a^{2}}\left(a^{3}+\frac{f(y+5)}{a}\right) &amp; =a^{3}+a^{2}+a+\frac{1}{a^{3}}\left(a^{3}+\frac{f(y+4)}{a}\right) &amp; =\ldots &amp; =a^{3}+a^{2}+a+1+\frac{1}{a}+\frac{1}{a^{2}}+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{f(y)}{a^{8}} \end{aligned}] [\begin{aligned} &amp; \Rightarrow f(9)=a^{3}+a^{2}+\ldots+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{1}{a^{7}} &amp; \Rightarrow a^{9}+3 a^{6}+3 a^{3}+2=a^{3}+a^{2}+\cdots+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{1}{a^{7}} \end{aligned}] [\begin{aligned} &amp; \Rightarrow a^{16}+3 a^{13}+3 a^{10}+2 a^{7}=a^{10}+a^{9}+\ldots+a^{3}+1 &amp; \Leftrightarrow a^{16}+3 a^{13}+2 a^{10}+a^{7}=a^{9}+a^{8}+a^{6}+a^{5}+a^{4}+a^{3}+1 \end{aligned}] Nếu $a&gt;1$ ta có [a^{16}&gt;a^{9}, \quad 3 a^{13}&gt;a^{8}+a^{6}+a^{5}] [2 a^{10}&gt;a^{4}+a^{3}, \quad a^{7}&gt;1] Nếu $a&lt;1$, ta có [a^{16}&lt;a^{9}, \quad 3 a^{13}&lt;a^{8}+a^{6}+a^{5}] [2 a^{10}&lt;a^{4}+a^{3}, \quad a^{7}&lt;1] Do đó ta có $a=1$, thay vào (11) ta có [f(y+1)=f(y)+1, \quad \forall y&gt;0 \hspace{2cm} (12)] +) Trong (9) thay $y$ bởi $y+1$ ta có: [\begin{aligned} &amp; f\left(x^{3}+y+1\right)=f(x)^{3}+\frac{f(x y+x)}{f(x)} \Rightarrow &amp; f\left(x^{3}+y\right)+1=f(x)^{3}+\frac{f(xy +x)}{f(x)} \Rightarrow &amp; f(x y+x)=f(x y)+f(x), \quad \forall x, y&gt;0 \end{aligned}] Do đó ta có: [f(x+y)=f(x)+f(y), \forall x, y&gt;0] +) Từ (10), (12) ta có $f\left(x^{3}\right)=f(x)^{3}$ +) Thay vào (9) ta có: [f\left(x^{3}+y\right)=f\left(x^{3}\right)+\frac{f(x y)}{f(x)}] Mà $f$ là hàm số cộng tính $\Rightarrow f(y)=\frac{f(x y)}{f(x)}, \forall x, y&gt;0$ $\Rightarrow f$ là hàm số nhân tính. Vậy ta có $f$ là hàm số vừa cộng tính vừa nhân tính $\Rightarrow f(x)=x, \forall x&gt;0$ (Đây là bài toán quen thuộc, lời giải chi tiết có ở Chương 4) Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Bài toán 4: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x+y f(x))+f(y-f(x))=2 x f(y) \hspace{2cm} (13)] $\hspace{8cm}$ ( Jio de Janeiro MO 2017) Đặt $a=f(0)$ Thay $x$ bởi 0 vào (13): $f(a y)+f(y-a)=0$ $\quad$ (14) Trường hợp 1: $a=0$, Từ (14) ta có $f(y)=0, \forall y \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $a \neq 0$ +) Trong (13) thay $y$ bởi 0 ta có: $ f(x)+f(-f(x))=2 a x \quad$ (15) [\Rightarrow\left{\begin{array}{l} f \; \text{là đơn ánh }\left(\text { do } a \neq 0\right) f(-a)=-a \quad \text {(thay x bởi 0 vào (15) )} \end{array}\right.] +) Trong (13) thay $x$ bởi $-a$ ta có: [f(-a-a y)+f(y+a)=-2 a f(y)] +) Trong (14) thay $y$ bởi $-y-1$ ta có : [\begin{aligned} &amp; f(-a-a y)+f(-y-1-a)=0 \Rightarrow &amp; f(y+a)-f(y-1-a)=-2 a f(y) \end{aligned}] Thay $y$ bởi $-a-\frac{1}{2}$ ta có $f\left(-a-\frac{1}{2}\right)=0$ +) Trong (14) thay $y$ bởi $\frac{-1}{2}$ ta có $f\left(\frac{-a}{2}\right)=0$ Do $f$ là đơn ánh nên suy ra $-a-\frac{1}{2}=\frac{-a}{2} \Leftrightarrow a=-1$ [\Rightarrow f\left(\frac{1}{2}\right)=0] +) Thay y bởi $\frac{1}{2}$ vào (13) ta có: [f\left(x+\frac{1}{2} f(x)\right)+f\left(\frac{1}{2}-f(x)\right)=0 \quad (16)] +) Thay $a$ bởi -1 vào (14) ta có : $f(-y)+f(y+1)=0$ Thay $y$ bởi $ f(x)-\frac{1}{2}: \quad f\left(-f(x)+\frac{1}{2}\right)+f\left(f(x)+\frac{1}{2}\right)=0$ Kết hợp với (16) ta có: $f\left(x+\frac{1}{2} f(x)\right)=f\left(f(x)+\frac{1}{2}\right)$ Vì hàm số $f$ là đơn ánh nên ta có $x+\frac{1}{2} f(x)=f(x)+\frac{1}{2}$ [\Leftrightarrow f(x)=2 x+1] Thử lại ta thấy hàm số này thỏa mãn bài toán. Vậy có 2 hàm số thỏa mãn bài toán là $f(x)=0, \forall x \in \mathbb{R}$ và $f(x)=2 x+1, \forall x \in \mathbb{R}$ Bài toán 5: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R} $ thỏa mãn: [f(x-2 f(y))=5 f(x)-4 x-2 f(y) \quad (17)] $\hspace{7cm} $ (Chọn đội tuyển PTNK 2015) +) Thay $x$ bởi 0, $y$ bởi 0 ta có $f(-2 f(0))=3 f(0) \quad $ (18) +) Thay $x$ bởi $2 f(0)$, $y$ bởi 0 ta có: [\begin{aligned} f(0) &amp; =5 f(2 f(0) ) -8 f(0)-2 f(0) &amp; \Rightarrow 5 f(2 f(0))=11 f(0) \quad (19) \end{aligned}] +) Thay $x$ bởi $2 f(0)$, y bởi $-2 f(0)$ ta có: [f\left( 2 f(0)-2 f(-2 f(0))\right)=5 f(2 f(0))-8 f(0)-2 f(-2 f(0))] Kết hợp (18), (19) ta suy ra $f(-4 f(0))=-3 f(0) \quad$ (20) +) Thay $x$ bởi $-2 f(0)$, y bởi 0 ta có : [\begin{aligned} f(-4 f(0)) &amp; =5 f(-2 f(0)+8 f(0)-2 f(0) \Rightarrow-3 f(0) &amp; =21 f(0) \Leftrightarrow f(0) &amp; =0 \end{aligned}] +) Thay $y$ bởi 0 ta có: [\begin{aligned} &amp; f(x)=5 f(x)-4 x &amp; \Leftrightarrow f(x)=x \end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. 1.2: THẾ CÁC BIỂU THỨC CHỨA BIẾN Bài toán 6: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f\left(x+y f\left(x^{2}\right)\right)=f(x)+x f(x y) \quad (1)] $\hspace{10cm}$ (Azerbaijan TST 2017) Thay $x$ bởi 0 ta có : $f(y f(0))=f(0)$ Nếu $f(0) \neq 0$ ta có $f(y)=c, \forall y \in \mathbb{R}$ với c là hằng số. Thử lại thay vào (1) ta suy ra $c=0$ ( vô lí vì $f(0) \neq 0$ ) Do đó ta có $f(0)=0$ +) Thay $x$ bởi 1 ta có: $f(1+y f(1))=f(1)+f(y) \quad (2)$ Nếu $f(1) \neq 1$, thay y bởi $\frac{1}{1-f(1)}$ ta có $f(1)=0$ [\Rightarrow f(y)=f(1)=0, \forall y \in \mathbb{R}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Ta xét trường hợp $f(1)=1$ [\begin{aligned} &amp; \Rightarrow f(y+1)=f(y)+1, \quad \forall y \in \mathbb{R} \quad (3) &amp; \Rightarrow f(-1)=-1 \end{aligned}] +) Thay $x$ bởi 1 ta có : $f(y-1)=-1-f(-y)$ Kết hợp với (3) suy ra $f(-y)=-f(y), \forall y \in \mathbb{R}$ $\Rightarrow f$ là hàm số lẻ. Giả sử $\exists a \neq 0$ sao cho $f(a)=0$. Do $f$ là hàm số lẻ, không mất tính tổng quát ta giả sử $a &gt; 0$ +) Trong (1) thay $x$ bởi $\sqrt{a}$ : [\begin{aligned} &amp; f(\sqrt{a})=f(\sqrt{a})+\sqrt{a} \cdot f(y \sqrt{a}) &amp; \Rightarrow f(y)=0, \forall y \in \mathbb{R} \quad \text{(vô lí)} \end{aligned}] Vậy ta có $f(x)=0 \Leftrightarrow x=0$ Xet với $x \neq 0$, trong (1) thay $y$ bởi $\frac{y-x}{f(x)}$ ta có [f(y)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}\right) \quad (4)] +) Trong (1) thay $y$ bởi $\frac{y-x}{f\left(x^{2}\right)}+\frac{1}{x}$ với $x \neq 0$ ta có: [\begin{aligned} &amp; f\left(x+y-x+\frac{f\left(x^{2}\right)}{x}\right)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}+1\right) \Leftrightarrow &amp; f\left(y+\frac{f\left(x^{2}\right)}{x}\right)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}\right)+x\left( \text{ do (3) }\right) \end{aligned}] Từ (4) ta suy ra $f\left(y+\frac{f\left(x^{2}\right)}{x}\right)=f(y)+x, \quad \forall x \neq 0$ Thay $x$ bởi $-f(y)$ với $y \neq 0$ ta có : [f\left(y+\frac{f\left(f(y)^{2}\right)}{-f(y)}\right)=0] Do $f(x)=0 \Leftrightarrow x=0$ [\Rightarrow f\left(f(y)^{2}\right)=y f(y) \quad (6)] +) Trong (5) thay $x$ bởi $f(x)$ với $x \neq 0$ ta có: [f\left(y+\frac{f\left(f(x)^{2}\right)}{f(x)}\right)=f(y)+f(x), \forall x, y \neq 0] Từ (6) ta suy ra $f(x+y)=f(x)+f(y), \forall x, y \neq 0$ Do $f$ là hàm số lẻ, $f(0)=0$ nên có thể suy ra được [f(x+y)=f(x)+f(y), \quad \forall x, y \in \mathbb{R}] Kết hợp với (1) ta có: $ f(x)+x f(x y)=f(x)+f\left(y f\left(x^{2}\right)\right)$ [\Leftrightarrow x f(x y)=f\left(y f\left(x^{2}\right)\right)] Thay $x$ bởi $f(x)$ ta có [\begin{aligned} f(x) f(y f(x)) &amp;= f\left(y f\left(f(x)^{2}\right)\right) \ &amp;=f(xy f(x)) \quad (\text{ do (6) }) \end{aligned}] Thay $y$ bởi $\frac{y}{f(x)}$ ta có $f(x y)=f(x) f(y)$ Do đó ta có hàm số $f$ vừa là hàm số cộng tính, vừa là hàm số nhân tính [\Rightarrow f(x)=x, \forall x \in \mathbb{R}] (Chứng minh chi tiết cho phần này đã có ở chương 4) Bài toán 7: Tìm tất cả hàm số $ f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x+2020 f(x y))=f(x)+2020 x f(y) \quad (7)] $\hspace{8cm} $(Chọn đội tuyển Hưng Yên 2020) +) Thay $x$, $y$ bởi $\frac{-1}{2020}$ ta có [f\left(\frac{-1}{2020}+2020 f\left(\frac{1}{2020^{2}}\right)\right)=0 \quad (8)] Đặt $c=\frac{-1}{2020}+2020 f\left(\frac{1}{2020^{2}}\right) \quad \Rightarrow f(c)=0$ +) Thay $x$ bởi $c$, $y$ bởi 1 vào (7) ta có [2020 c f(1)=0 \Leftrightarrow c f(1)=0] Ta xét hai trường hợp sau: Trường hợp 1: $f(1)=0$, thay $x$ bởi $\frac{1}{y}$ với $y \neq 0$ ta có $$ f(y)=0, \forall y \neq 0 $$ +) Thay $y$ bởi 0 vào (7) ta có [f(x+2020 f(0))=f(x)+2020 x f(0)] Chọn $x \neq 0, x \neq-2020 f(0)$ ta dễ có $f(0)=0$ Nên ta suy ra $f(x)=0, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $f(1) \neq 0 \Rightarrow c=0$ [\Rightarrow f(x)=0 \Leftrightarrow x=0] Nên từ (8) ta có $f\left(\frac{1}{2020^{2}}\right)=\frac{1}{2020^{2}}$ Với $x, y \neq 0$, đặt $ z=x+2020 y f\left(\frac{x}{2020^{2} y}\right)$ +) Trong (7) thay $x$ bởi $\frac{x}{y}$, $y$ bởi $\frac{1}{2020^{2}}$ ta có: [f\left(\frac{x}{y}+2020 f\left(\frac{x}{2020^{2} y}\right)\right)=f\left(\frac{x}{y}\right)+2020 \cdot \frac{x}{y} \cdot \frac{1}{2020^{2}}] [\implies f\left(\frac{z}{y}\right)=f\left(\frac{x}{y}\right)+\frac{x}{2020 y} \quad (9)] +) Thay $x$ bởi $y$, $y$ bởi $\frac{x}{y}$ ta có : [f(y+2020 f(x))=f(y)+2020 y f\left(\frac{x}{y}\right)] +) Thay $x$ bởi $y$, $y$ bởi $\frac{z}{y}$ ta có: [\begin{aligned} f(y+2020 f(z))&amp;=f(y)+2020 y f\left(\frac{z}{y}\right) &amp;= f(y)+2020 y f\left(\frac{x}{y}\right)+x \quad\left( \text{ do (9) }\right) \end{aligned}] [\Rightarrow f(y+2020 f(x))+x=f(y+2020 f(z))] Thay $y$ bởi $-2020 f(x)$ ta có [f(-2020 f(x)+2020 f(z))=x] $\Rightarrow f$ là toàn ánh +) Trong (8) thay $x$ bởi 1, $y$ bởi $x$ ta có: [f(1+2020 f(x))=f(1)+2020 f(x)] Do $f$ là toàn ánh nên $f(2020 x+1)=f(1)+2020 x, \forall x \in \mathbb{R}$ Đặt $k=f(1)-1$, ta suy ra $f(x)=x+k, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Vậy có tất cả hai hàm số thỏa mãn bài toán đó là $f(x)=0, \forall x \in \mathbb{R}$ và $f(x)=x, \forall x \in \mathbb{R}$ Bài toán 8: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x f(y)-f(x))=2 f(x) +x y \quad (10)] $\hspace{12cm}$ (VMO 2017) +) Trong (10) thay $x$ bởi 1 : [f(f(y)-f(1))=2 f(1)+y] Đây là phương trình hàm có biến tự do $y$ ở vế phải nên ta dễ chứng minh được $f$ là song ánh. [\Rightarrow \exists c \in \mathbb{R} \mid f(c)=0] +) Thay $x$ bởi $c$, $y$ bởi 0 ta có : [f(c f(0))=0] Mà ta có $f(c)=0$, $f$ là song ánh $\Rightarrow c f(0)=c$ [\Rightarrow\left[\begin{array}{l} c=0 f(0)=1 \end{array}\right.] Trường hợp 1: $c=0 \Rightarrow f(0)=0$ Thay $y$ bởi 0 ta có: $f(-f(x))=2 f(x)$ Do $f$ là song ánh $\Rightarrow f(x)=-2 x, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này không thỏa mãn bài toán. Trường hợp 2: $c \neq 0 \Rightarrow f(0)=1$ +) Thay $x$ bởi $c$, $y$ bởi $c: \quad f(0)=c^{2}$ [\Rightarrow c^{2}=1] +) Thay $x$ bởi 0, $y$ bởi $c: \quad f(-1)=2$ [\Rightarrow c=1 \text {, ta có } f(1)=0] +) Thay $y$ bởi $\frac{1-2 f(x)}{x}$ với $x \neq 0$ ta có: [f\left(x f\left(\frac{1-2 f(x)}{x}\right)-f(x)\right)=1] Do $f$ là song ánh $\Rightarrow x f\left(\frac{1-2 f(x)}{x}\right)-f(x)=0$ [\Leftrightarrow f\left(\frac{1-2 f(x)}{x}\right)=\frac{f(x)}{x}, \forall x \neq 0] +) Thay $x$ bởi $\frac{1-2 f(x)}{x}$ ta có [f\left(\frac{1-2 f(x)}{x} \cdot f(y)-\frac{f(x)}{x}\right)=\frac{1-2 f(x)}{x} \cdot y+\frac{2 f(x)}{x}] Thay $y$ bởi 1 suy ra: $f\left(\frac{-f(x)}{x}\right)=\frac{1}{x}, \forall x \neq 0$ +) Thay $y$ bởi $\frac{-f(x)}{x}$ ta có : [\begin{aligned} &amp; f\left(x \cdot \frac{1}{x}-f(x)\right)=2 f(x)-f(x) &amp; \Leftrightarrow f(1-f(x))=f(x), \quad \forall x \neq 0 \end{aligned}] Do $f$ là song ánh, $f(0)=1$ nên ta có $f(1-x)=x, \forall x \neq 1$ [\Leftrightarrow f(x)=1-x, \forall x \neq 0] Kết hợp $f(0)=1$ nên ta có $f(x)=1-x, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán." />
-<meta property="og:description" content="Trong rất nhiều bài toán, việc sử dụng những phép thế hợp lí là mấu chốt để giải quyết bài toán. Trong chương 1, tôi xin giới thiệu một số phép thế thường được sử dụng để giải phương trình hàm. Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là Thế các giá trị đặc biệt và Thế các biểu thức chứa biến. 1.1: THẾ CÁC GIÁ TRỊ ĐẶC BIỆT Bài toán 1: Tìm tất cả hàm số \(f \colon \mathbb{R} \to \mathbb{R}\) thỏa mãn: [f(x-1) f\left(y^{2}\right)=y f(x y)-y f(y), \forall x, y \in \mathbb{R} \hspace{2cm} (1)] $ \hspace{8.5cm} $ (Chọn đội tuyển KHTN 2015) +) Trong (1) thay \(x\) bởi 1, \(y\) bởi 0 ta có : [f(0)^{2}=0 \Leftrightarrow f(0)=0] +) Trong (1) thay \(x\) bởi 0 , \(y\) bởi 1 ta có : [\begin{aligned} &amp; f(-1) f(1)=-f(1) \Leftrightarrow &amp; {\left[\begin{array}{l} f(1)=0 f(-1)=-1 \end{array}\right.} \end{aligned}] +) Nếu \(f(1)=0\), trong (1) thay \(y\) bởi 1 ta có [f(x)=0, \quad \forall x \in \mathbb{R}] +) Nếu \(f(-1) = -1\), Trong (1) thay \(x\) bởi 0 ta có: [\begin{aligned} &amp; f\left(y^{2}\right)=y f(y) \hspace{2cm} (2) \Rightarrow &amp; f(1)=-f(-1)=1 \end{aligned}] +) Tư (1), (2) ta có: [f(x-1) f(y)=f(x y)-f(y), \forall y \neq 0] Kết hợp $f(0)=0$ ta có [f(x-1) f(y)=f(x y)-f(y), \forall x, y \in \mathbb{R} \hspace{2cm} (3)] +) Trong (1) thay y bởi 1 ta có [f(x-1)=f(x)-1 \hspace{2cm} (4)] +) Từ $(3),(4)$ ta có $f(x y)=f(x) f(y), \forall x, y \in \mathbb{R}$ [\Rightarrow f\left(x^{2}\right)=f(x)^{2} \hspace{2cm} (5)] Từ (2), (5) suy ra $f(x)^{2}=x f(x)$ [\Leftrightarrow\left[\begin{array}{l} f(x)=x, f(x)=0, \end{array}, \forall x \in \mathbb{R}\right.] Nếu tồn tại $ a, b \neq 0$ sao cho [\left{\begin{array}{l}f(a)=0 \ f(b)=b\end{array}\right.] Từ (4) ta có $f(a-1)=-1$ Từ (5) ta có $f((a-1) b)=f(a-1) f(b)=-b$ Mà $b \neq 0 \Rightarrow(a-1) b=-b \Rightarrow a=0$ \; (vô lí) Nên ta có [\left[\begin{array}{l}f(x)=x, \forall x \in \mathbb{R} f(x)=0, \forall x \in \mathbb{R}\end{array}\right.] Thử lại ta thấy 2 hàm số này đều thỏa mãn điều kiện bài toán. Bài toán 2: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x f(x)+f(x) f(y)+y-1)=f(x f(x)+x y)+y-1 \hspace{2cm} (6)] $\hspace{10cm}$ (Korea MO 2014) +) Trong (6) thay $x$ bởi $0$ ta có: [f(f(0) f(y)+y-1)=f(0)+y-1 \hspace{2cm} (7)] +) Trong (7) thay $y$ bởi $1-f(0)$ ta có: [f(f(0) f(1-f(0))-f(0))=0] Đặt $c=f(0) f(1-f(0))-f(0) \Rightarrow f(c)=0$ +) Trong (6) thay $x$ bởi $c$ ta có: [f(y-1)=f(c y)+y-1 \hspace{2cm} (8)] +) Trong (8) thay $y$ bởi 1 ta có: [f(0)=f(c)=0] +) Trong (6) thay $x$ bởi 0 ta có: [\begin{aligned} &amp; f(y-1)=y-1 \Rightarrow &amp; f(x)=x, \forall x \in \mathbb{R} \end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Bài toán 3: Tìm tất cả hàm số $f \colon \mathbb{R^{+}} \to \mathbb{R^{+}}$ thỏa mãn: [f\left(x^{3}+y\right)=f(x)^{3}+\frac{f(x y)}{f(x)}, \forall x, y&gt;0 \hspace{2cm} (9)] $\hspace{9cm}$ (Chọn đội tuyển KHTN 2009) Đặt $f(1)=a \quad (a&gt;0)$ +) Trong (9) thay $y$ bởi 1 ta có: [f\left(x^{3}+1\right)=f\left(x^{3}\right)+1 \hspace{2cm} (10)] +) Trong (9) thay $x$ bởi 1 ta có : [f(y+1)=f(1)^{3}+1 \hspace{2cm} (11)] Sử dụng (10), (11) ta lần lượt tính được : [\begin{aligned} &amp; f(2)=a^{3}+1 &amp; f(3)=a^{3}+\frac{a^{3}+1}{a}=a^{3}+a^{2}+\frac{1}{a} &amp; f(9)=f(2)^{3}+1=\left(a^{3}+1\right)^{3}+1=a^{9}+3 a^{6}+3 a^{3}+2 \end{aligned}] Mặt khác ta có: [\begin{aligned} &amp; f(y+8)=a^{3}+\frac{f(y+7)}{a}=a^{3}+\frac{1}{a}\left(a^{3}+\frac{f(y+6)}{a}\right) &amp; =a^{3}+a^{2}+\frac{1}{a^{2}}\left(a^{3}+\frac{f(y+5)}{a}\right) &amp; =a^{3}+a^{2}+a+\frac{1}{a^{3}}\left(a^{3}+\frac{f(y+4)}{a}\right) &amp; =\ldots &amp; =a^{3}+a^{2}+a+1+\frac{1}{a}+\frac{1}{a^{2}}+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{f(y)}{a^{8}} \end{aligned}] [\begin{aligned} &amp; \Rightarrow f(9)=a^{3}+a^{2}+\ldots+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{1}{a^{7}} &amp; \Rightarrow a^{9}+3 a^{6}+3 a^{3}+2=a^{3}+a^{2}+\cdots+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{1}{a^{7}} \end{aligned}] [\begin{aligned} &amp; \Rightarrow a^{16}+3 a^{13}+3 a^{10}+2 a^{7}=a^{10}+a^{9}+\ldots+a^{3}+1 &amp; \Leftrightarrow a^{16}+3 a^{13}+2 a^{10}+a^{7}=a^{9}+a^{8}+a^{6}+a^{5}+a^{4}+a^{3}+1 \end{aligned}] Nếu $a&gt;1$ ta có [a^{16}&gt;a^{9}, \quad 3 a^{13}&gt;a^{8}+a^{6}+a^{5}] [2 a^{10}&gt;a^{4}+a^{3}, \quad a^{7}&gt;1] Nếu $a&lt;1$, ta có [a^{16}&lt;a^{9}, \quad 3 a^{13}&lt;a^{8}+a^{6}+a^{5}] [2 a^{10}&lt;a^{4}+a^{3}, \quad a^{7}&lt;1] Do đó ta có $a=1$, thay vào (11) ta có [f(y+1)=f(y)+1, \quad \forall y&gt;0 \hspace{2cm} (12)] +) Trong (9) thay $y$ bởi $y+1$ ta có: [\begin{aligned} &amp; f\left(x^{3}+y+1\right)=f(x)^{3}+\frac{f(x y+x)}{f(x)} \Rightarrow &amp; f\left(x^{3}+y\right)+1=f(x)^{3}+\frac{f(xy +x)}{f(x)} \Rightarrow &amp; f(x y+x)=f(x y)+f(x), \quad \forall x, y&gt;0 \end{aligned}] Do đó ta có: [f(x+y)=f(x)+f(y), \forall x, y&gt;0] +) Từ (10), (12) ta có $f\left(x^{3}\right)=f(x)^{3}$ +) Thay vào (9) ta có: [f\left(x^{3}+y\right)=f\left(x^{3}\right)+\frac{f(x y)}{f(x)}] Mà $f$ là hàm số cộng tính $\Rightarrow f(y)=\frac{f(x y)}{f(x)}, \forall x, y&gt;0$ $\Rightarrow f$ là hàm số nhân tính. Vậy ta có $f$ là hàm số vừa cộng tính vừa nhân tính $\Rightarrow f(x)=x, \forall x&gt;0$ (Đây là bài toán quen thuộc, lời giải chi tiết có ở Chương 4) Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Bài toán 4: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x+y f(x))+f(y-f(x))=2 x f(y) \hspace{2cm} (13)] $\hspace{8cm}$ ( Jio de Janeiro MO 2017) Đặt $a=f(0)$ Thay $x$ bởi 0 vào (13): $f(a y)+f(y-a)=0$ $\quad$ (14) Trường hợp 1: $a=0$, Từ (14) ta có $f(y)=0, \forall y \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $a \neq 0$ +) Trong (13) thay $y$ bởi 0 ta có: $ f(x)+f(-f(x))=2 a x \quad$ (15) [\Rightarrow\left{\begin{array}{l} f \; \text{là đơn ánh }\left(\text { do } a \neq 0\right) f(-a)=-a \quad \text {(thay x bởi 0 vào (15) )} \end{array}\right.] +) Trong (13) thay $x$ bởi $-a$ ta có: [f(-a-a y)+f(y+a)=-2 a f(y)] +) Trong (14) thay $y$ bởi $-y-1$ ta có : [\begin{aligned} &amp; f(-a-a y)+f(-y-1-a)=0 \Rightarrow &amp; f(y+a)-f(y-1-a)=-2 a f(y) \end{aligned}] Thay $y$ bởi $-a-\frac{1}{2}$ ta có $f\left(-a-\frac{1}{2}\right)=0$ +) Trong (14) thay $y$ bởi $\frac{-1}{2}$ ta có $f\left(\frac{-a}{2}\right)=0$ Do $f$ là đơn ánh nên suy ra $-a-\frac{1}{2}=\frac{-a}{2} \Leftrightarrow a=-1$ [\Rightarrow f\left(\frac{1}{2}\right)=0] +) Thay y bởi $\frac{1}{2}$ vào (13) ta có: [f\left(x+\frac{1}{2} f(x)\right)+f\left(\frac{1}{2}-f(x)\right)=0 \quad (16)] +) Thay $a$ bởi -1 vào (14) ta có : $f(-y)+f(y+1)=0$ Thay $y$ bởi $ f(x)-\frac{1}{2}: \quad f\left(-f(x)+\frac{1}{2}\right)+f\left(f(x)+\frac{1}{2}\right)=0$ Kết hợp với (16) ta có: $f\left(x+\frac{1}{2} f(x)\right)=f\left(f(x)+\frac{1}{2}\right)$ Vì hàm số $f$ là đơn ánh nên ta có $x+\frac{1}{2} f(x)=f(x)+\frac{1}{2}$ [\Leftrightarrow f(x)=2 x+1] Thử lại ta thấy hàm số này thỏa mãn bài toán. Vậy có 2 hàm số thỏa mãn bài toán là $f(x)=0, \forall x \in \mathbb{R}$ và $f(x)=2 x+1, \forall x \in \mathbb{R}$ Bài toán 5: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R} $ thỏa mãn: [f(x-2 f(y))=5 f(x)-4 x-2 f(y) \quad (17)] $\hspace{7cm} $ (Chọn đội tuyển PTNK 2015) +) Thay $x$ bởi 0, $y$ bởi 0 ta có $f(-2 f(0))=3 f(0) \quad $ (18) +) Thay $x$ bởi $2 f(0)$, $y$ bởi 0 ta có: [\begin{aligned} f(0) &amp; =5 f(2 f(0) ) -8 f(0)-2 f(0) &amp; \Rightarrow 5 f(2 f(0))=11 f(0) \quad (19) \end{aligned}] +) Thay $x$ bởi $2 f(0)$, y bởi $-2 f(0)$ ta có: [f\left( 2 f(0)-2 f(-2 f(0))\right)=5 f(2 f(0))-8 f(0)-2 f(-2 f(0))] Kết hợp (18), (19) ta suy ra $f(-4 f(0))=-3 f(0) \quad$ (20) +) Thay $x$ bởi $-2 f(0)$, y bởi 0 ta có : [\begin{aligned} f(-4 f(0)) &amp; =5 f(-2 f(0)+8 f(0)-2 f(0) \Rightarrow-3 f(0) &amp; =21 f(0) \Leftrightarrow f(0) &amp; =0 \end{aligned}] +) Thay $y$ bởi 0 ta có: [\begin{aligned} &amp; f(x)=5 f(x)-4 x &amp; \Leftrightarrow f(x)=x \end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. 1.2: THẾ CÁC BIỂU THỨC CHỨA BIẾN Bài toán 6: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f\left(x+y f\left(x^{2}\right)\right)=f(x)+x f(x y) \quad (1)] $\hspace{10cm}$ (Azerbaijan TST 2017) Thay $x$ bởi 0 ta có : $f(y f(0))=f(0)$ Nếu $f(0) \neq 0$ ta có $f(y)=c, \forall y \in \mathbb{R}$ với c là hằng số. Thử lại thay vào (1) ta suy ra $c=0$ ( vô lí vì $f(0) \neq 0$ ) Do đó ta có $f(0)=0$ +) Thay $x$ bởi 1 ta có: $f(1+y f(1))=f(1)+f(y) \quad (2)$ Nếu $f(1) \neq 1$, thay y bởi $\frac{1}{1-f(1)}$ ta có $f(1)=0$ [\Rightarrow f(y)=f(1)=0, \forall y \in \mathbb{R}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Ta xét trường hợp $f(1)=1$ [\begin{aligned} &amp; \Rightarrow f(y+1)=f(y)+1, \quad \forall y \in \mathbb{R} \quad (3) &amp; \Rightarrow f(-1)=-1 \end{aligned}] +) Thay $x$ bởi 1 ta có : $f(y-1)=-1-f(-y)$ Kết hợp với (3) suy ra $f(-y)=-f(y), \forall y \in \mathbb{R}$ $\Rightarrow f$ là hàm số lẻ. Giả sử $\exists a \neq 0$ sao cho $f(a)=0$. Do $f$ là hàm số lẻ, không mất tính tổng quát ta giả sử $a &gt; 0$ +) Trong (1) thay $x$ bởi $\sqrt{a}$ : [\begin{aligned} &amp; f(\sqrt{a})=f(\sqrt{a})+\sqrt{a} \cdot f(y \sqrt{a}) &amp; \Rightarrow f(y)=0, \forall y \in \mathbb{R} \quad \text{(vô lí)} \end{aligned}] Vậy ta có $f(x)=0 \Leftrightarrow x=0$ Xet với $x \neq 0$, trong (1) thay $y$ bởi $\frac{y-x}{f(x)}$ ta có [f(y)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}\right) \quad (4)] +) Trong (1) thay $y$ bởi $\frac{y-x}{f\left(x^{2}\right)}+\frac{1}{x}$ với $x \neq 0$ ta có: [\begin{aligned} &amp; f\left(x+y-x+\frac{f\left(x^{2}\right)}{x}\right)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}+1\right) \Leftrightarrow &amp; f\left(y+\frac{f\left(x^{2}\right)}{x}\right)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}\right)+x\left( \text{ do (3) }\right) \end{aligned}] Từ (4) ta suy ra $f\left(y+\frac{f\left(x^{2}\right)}{x}\right)=f(y)+x, \quad \forall x \neq 0$ Thay $x$ bởi $-f(y)$ với $y \neq 0$ ta có : [f\left(y+\frac{f\left(f(y)^{2}\right)}{-f(y)}\right)=0] Do $f(x)=0 \Leftrightarrow x=0$ [\Rightarrow f\left(f(y)^{2}\right)=y f(y) \quad (6)] +) Trong (5) thay $x$ bởi $f(x)$ với $x \neq 0$ ta có: [f\left(y+\frac{f\left(f(x)^{2}\right)}{f(x)}\right)=f(y)+f(x), \forall x, y \neq 0] Từ (6) ta suy ra $f(x+y)=f(x)+f(y), \forall x, y \neq 0$ Do $f$ là hàm số lẻ, $f(0)=0$ nên có thể suy ra được [f(x+y)=f(x)+f(y), \quad \forall x, y \in \mathbb{R}] Kết hợp với (1) ta có: $ f(x)+x f(x y)=f(x)+f\left(y f\left(x^{2}\right)\right)$ [\Leftrightarrow x f(x y)=f\left(y f\left(x^{2}\right)\right)] Thay $x$ bởi $f(x)$ ta có [\begin{aligned} f(x) f(y f(x)) &amp;= f\left(y f\left(f(x)^{2}\right)\right) \ &amp;=f(xy f(x)) \quad (\text{ do (6) }) \end{aligned}] Thay $y$ bởi $\frac{y}{f(x)}$ ta có $f(x y)=f(x) f(y)$ Do đó ta có hàm số $f$ vừa là hàm số cộng tính, vừa là hàm số nhân tính [\Rightarrow f(x)=x, \forall x \in \mathbb{R}] (Chứng minh chi tiết cho phần này đã có ở chương 4) Bài toán 7: Tìm tất cả hàm số $ f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x+2020 f(x y))=f(x)+2020 x f(y) \quad (7)] $\hspace{8cm} $(Chọn đội tuyển Hưng Yên 2020) +) Thay $x$, $y$ bởi $\frac{-1}{2020}$ ta có [f\left(\frac{-1}{2020}+2020 f\left(\frac{1}{2020^{2}}\right)\right)=0 \quad (8)] Đặt $c=\frac{-1}{2020}+2020 f\left(\frac{1}{2020^{2}}\right) \quad \Rightarrow f(c)=0$ +) Thay $x$ bởi $c$, $y$ bởi 1 vào (7) ta có [2020 c f(1)=0 \Leftrightarrow c f(1)=0] Ta xét hai trường hợp sau: Trường hợp 1: $f(1)=0$, thay $x$ bởi $\frac{1}{y}$ với $y \neq 0$ ta có $$ f(y)=0, \forall y \neq 0 $$ +) Thay $y$ bởi 0 vào (7) ta có [f(x+2020 f(0))=f(x)+2020 x f(0)] Chọn $x \neq 0, x \neq-2020 f(0)$ ta dễ có $f(0)=0$ Nên ta suy ra $f(x)=0, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $f(1) \neq 0 \Rightarrow c=0$ [\Rightarrow f(x)=0 \Leftrightarrow x=0] Nên từ (8) ta có $f\left(\frac{1}{2020^{2}}\right)=\frac{1}{2020^{2}}$ Với $x, y \neq 0$, đặt $ z=x+2020 y f\left(\frac{x}{2020^{2} y}\right)$ +) Trong (7) thay $x$ bởi $\frac{x}{y}$, $y$ bởi $\frac{1}{2020^{2}}$ ta có: [f\left(\frac{x}{y}+2020 f\left(\frac{x}{2020^{2} y}\right)\right)=f\left(\frac{x}{y}\right)+2020 \cdot \frac{x}{y} \cdot \frac{1}{2020^{2}}] [\implies f\left(\frac{z}{y}\right)=f\left(\frac{x}{y}\right)+\frac{x}{2020 y} \quad (9)] +) Thay $x$ bởi $y$, $y$ bởi $\frac{x}{y}$ ta có : [f(y+2020 f(x))=f(y)+2020 y f\left(\frac{x}{y}\right)] +) Thay $x$ bởi $y$, $y$ bởi $\frac{z}{y}$ ta có: [\begin{aligned} f(y+2020 f(z))&amp;=f(y)+2020 y f\left(\frac{z}{y}\right) &amp;= f(y)+2020 y f\left(\frac{x}{y}\right)+x \quad\left( \text{ do (9) }\right) \end{aligned}] [\Rightarrow f(y+2020 f(x))+x=f(y+2020 f(z))] Thay $y$ bởi $-2020 f(x)$ ta có [f(-2020 f(x)+2020 f(z))=x] $\Rightarrow f$ là toàn ánh +) Trong (8) thay $x$ bởi 1, $y$ bởi $x$ ta có: [f(1+2020 f(x))=f(1)+2020 f(x)] Do $f$ là toàn ánh nên $f(2020 x+1)=f(1)+2020 x, \forall x \in \mathbb{R}$ Đặt $k=f(1)-1$, ta suy ra $f(x)=x+k, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Vậy có tất cả hai hàm số thỏa mãn bài toán đó là $f(x)=0, \forall x \in \mathbb{R}$ và $f(x)=x, \forall x \in \mathbb{R}$ Bài toán 8: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x f(y)-f(x))=2 f(x) +x y \quad (10)] $\hspace{12cm}$ (VMO 2017) +) Trong (10) thay $x$ bởi 1 : [f(f(y)-f(1))=2 f(1)+y] Đây là phương trình hàm có biến tự do $y$ ở vế phải nên ta dễ chứng minh được $f$ là song ánh. [\Rightarrow \exists c \in \mathbb{R} \mid f(c)=0] +) Thay $x$ bởi $c$, $y$ bởi 0 ta có : [f(c f(0))=0] Mà ta có $f(c)=0$, $f$ là song ánh $\Rightarrow c f(0)=c$ [\Rightarrow\left[\begin{array}{l} c=0 f(0)=1 \end{array}\right.] Trường hợp 1: $c=0 \Rightarrow f(0)=0$ Thay $y$ bởi 0 ta có: $f(-f(x))=2 f(x)$ Do $f$ là song ánh $\Rightarrow f(x)=-2 x, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này không thỏa mãn bài toán. Trường hợp 2: $c \neq 0 \Rightarrow f(0)=1$ +) Thay $x$ bởi $c$, $y$ bởi $c: \quad f(0)=c^{2}$ [\Rightarrow c^{2}=1] +) Thay $x$ bởi 0, $y$ bởi $c: \quad f(-1)=2$ [\Rightarrow c=1 \text {, ta có } f(1)=0] +) Thay $y$ bởi $\frac{1-2 f(x)}{x}$ với $x \neq 0$ ta có: [f\left(x f\left(\frac{1-2 f(x)}{x}\right)-f(x)\right)=1] Do $f$ là song ánh $\Rightarrow x f\left(\frac{1-2 f(x)}{x}\right)-f(x)=0$ [\Leftrightarrow f\left(\frac{1-2 f(x)}{x}\right)=\frac{f(x)}{x}, \forall x \neq 0] +) Thay $x$ bởi $\frac{1-2 f(x)}{x}$ ta có [f\left(\frac{1-2 f(x)}{x} \cdot f(y)-\frac{f(x)}{x}\right)=\frac{1-2 f(x)}{x} \cdot y+\frac{2 f(x)}{x}] Thay $y$ bởi 1 suy ra: $f\left(\frac{-f(x)}{x}\right)=\frac{1}{x}, \forall x \neq 0$ +) Thay $y$ bởi $\frac{-f(x)}{x}$ ta có : [\begin{aligned} &amp; f\left(x \cdot \frac{1}{x}-f(x)\right)=2 f(x)-f(x) &amp; \Leftrightarrow f(1-f(x))=f(x), \quad \forall x \neq 0 \end{aligned}] Do $f$ là song ánh, $f(0)=1$ nên ta có $f(1-x)=x, \forall x \neq 1$ [\Leftrightarrow f(x)=1-x, \forall x \neq 0] Kết hợp $f(0)=1$ nên ta có $f(x)=1-x, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán." />
+<meta name="description" content="Trong rất nhiều bài toán, việc sử dụng những phép thế hợp lí là mấu chốt để giải quyết bài toán. Trong chương 1, tôi xin giới thiệu một số phép thế thường được sử dụng để giải phương trình hàm. Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là THẾ CÁC GIÁ TRỊ ĐẶC BIỆTvà THẾ CÁC BIỂU THỨC CHỨA BIẾN. 1.1: THẾ CÁC GIÁ TRỊ ĐẶC BIỆT Bài toán 1: Tìm tất cả hàm số \(f \colon \mathbb{R} \to \mathbb{R}\) thỏa mãn: [f(x-1) f\left(y^{2}\right)=y f(x y)-y f(y), \forall x, y \in \mathbb{R} \tag{1}] $ \hspace{8.5cm} $ (Chọn đội tuyển KHTN 2015) +) Trong (1) thay \(x\) bởi 1, \(y\) bởi 0 ta có : [f(0)^{2}=0 \Leftrightarrow f(0)=0] +) Trong (1) thay \(x\) bởi 0 , \(y\) bởi 1 ta có : [\begin{aligned} &amp; f(-1) f(1)=-f(1) \Leftrightarrow &amp; {\left[\begin{array}{l} f(1)=0 f(-1)=-1 \end{array}\right.} \end{aligned}] +) Nếu \(f(1)=0\), trong (1) thay \(y\) bởi 1 ta có [f(x)=0, \quad \forall x \in \mathbb{R}] +) Nếu \(f(-1) = -1\), Trong (1) thay \(x\) bởi 0 ta có: [\begin{aligned} &amp; f\left(y^{2}\right)=y f(y) \tag{2} \Rightarrow &amp; f(1)=-f(-1)=1 \end{aligned}] +) Tư (1), (2) ta có: [f(x-1) f(y)=f(x y)-f(y), \forall y \neq 0] Kết hợp $f(0)=0$ ta có [f(x-1) f(y)=f(x y)-f(y), \forall x, y \in \mathbb{R} \tag{3}] +) Trong (1) thay y bởi 1 ta có [f(x-1)=f(x)-1 \tag{4}] +) Từ $(3),(4)$ ta có $f(x y)=f(x) f(y), \forall x, y \in \mathbb{R}$ [\Rightarrow f\left(x^{2}\right)=f(x)^{2} \tag{5}] Từ (2), (5) suy ra $f(x)^{2}=x f(x)$ [\Leftrightarrow\left[\begin{array}{l} f(x)=x, f(x)=0, \end{array}, \forall x \in \mathbb{R}\right.] Nếu tồn tại $ a, b \neq 0$ sao cho [\left{\begin{array}{l}f(a)=0 \ f(b)=b\end{array}\right.] Từ (4) ta có $f(a-1)=-1$ Từ (5) ta có $f((a-1) b)=f(a-1) f(b)=-b$ Mà $b \neq 0 \Rightarrow(a-1) b=-b \Rightarrow a=0$ \; (vô lí) Nên ta có [\left[\begin{array}{l}f(x)=x, \forall x \in \mathbb{R} f(x)=0, \forall x \in \mathbb{R}\end{array}\right.] Thử lại ta thấy 2 hàm số này đều thỏa mãn điều kiện bài toán. Bài toán 2: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x f(x)+f(x) f(y)+y-1)=f(x f(x)+x y)+y-1 \tag{6}] $\hspace{10cm}$ (Korea MO 2014) +) Trong (6) thay $x$ bởi $0$ ta có: [f(f(0) f(y)+y-1)=f(0)+y-1 \hspace{2cm} (7)] +) Trong (7) thay $y$ bởi $1-f(0)$ ta có: [f(f(0) f(1-f(0))-f(0))=0] Đặt $c=f(0) f(1-f(0))-f(0) \Rightarrow f(c)=0$ +) Trong (6) thay $x$ bởi $c$ ta có: [f(y-1)=f(c y)+y-1 \hspace{2cm} (8)] +) Trong (8) thay $y$ bởi 1 ta có: [f(0)=f(c)=0] +) Trong (6) thay $x$ bởi 0 ta có: [\begin{aligned} &amp; f(y-1)=y-1 \Rightarrow &amp; f(x)=x, \forall x \in \mathbb{R} \end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Bài toán 3: Tìm tất cả hàm số $f \colon \mathbb{R^{+}} \to \mathbb{R^{+}}$ thỏa mãn: [f\left(x^{3}+y\right)=f(x)^{3}+\frac{f(x y)}{f(x)}, \forall x, y&gt;0 \hspace{2cm} (9)] $\hspace{9cm}$ (Chọn đội tuyển KHTN 2009) Đặt $f(1)=a \quad (a&gt;0)$ +) Trong (9) thay $y$ bởi 1 ta có: [f\left(x^{3}+1\right)=f\left(x^{3}\right)+1 \hspace{2cm} (10)] +) Trong (9) thay $x$ bởi 1 ta có : [f(y+1)=f(1)^{3}+1 \hspace{2cm} (11)] Sử dụng (10), (11) ta lần lượt tính được : [\begin{aligned} &amp; f(2)=a^{3}+1 &amp; f(3)=a^{3}+\frac{a^{3}+1}{a}=a^{3}+a^{2}+\frac{1}{a} &amp; f(9)=f(2)^{3}+1=\left(a^{3}+1\right)^{3}+1=a^{9}+3 a^{6}+3 a^{3}+2 \end{aligned}] Mặt khác ta có: [\begin{aligned} &amp; f(y+8)=a^{3}+\frac{f(y+7)}{a}=a^{3}+\frac{1}{a}\left(a^{3}+\frac{f(y+6)}{a}\right) &amp; =a^{3}+a^{2}+\frac{1}{a^{2}}\left(a^{3}+\frac{f(y+5)}{a}\right) &amp; =a^{3}+a^{2}+a+\frac{1}{a^{3}}\left(a^{3}+\frac{f(y+4)}{a}\right) &amp; =\ldots &amp; =a^{3}+a^{2}+a+1+\frac{1}{a}+\frac{1}{a^{2}}+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{f(y)}{a^{8}} \end{aligned}] [\begin{aligned} &amp; \Rightarrow f(9)=a^{3}+a^{2}+\ldots+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{1}{a^{7}} &amp; \Rightarrow a^{9}+3 a^{6}+3 a^{3}+2=a^{3}+a^{2}+\cdots+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{1}{a^{7}} \end{aligned}] [\begin{aligned} &amp; \Rightarrow a^{16}+3 a^{13}+3 a^{10}+2 a^{7}=a^{10}+a^{9}+\ldots+a^{3}+1 &amp; \Leftrightarrow a^{16}+3 a^{13}+2 a^{10}+a^{7}=a^{9}+a^{8}+a^{6}+a^{5}+a^{4}+a^{3}+1 \end{aligned}] Nếu $a&gt;1$ ta có [a^{16}&gt;a^{9}, \quad 3 a^{13}&gt;a^{8}+a^{6}+a^{5}] [2 a^{10}&gt;a^{4}+a^{3}, \quad a^{7}&gt;1] Nếu $a&lt;1$, ta có [a^{16}&lt;a^{9}, \quad 3 a^{13}&lt;a^{8}+a^{6}+a^{5}] [2 a^{10}&lt;a^{4}+a^{3}, \quad a^{7}&lt;1] Do đó ta có $a=1$, thay vào (11) ta có [f(y+1)=f(y)+1, \quad \forall y&gt;0 \hspace{2cm} (12)] +) Trong (9) thay $y$ bởi $y+1$ ta có: [\begin{aligned} &amp; f\left(x^{3}+y+1\right)=f(x)^{3}+\frac{f(x y+x)}{f(x)} \Rightarrow &amp; f\left(x^{3}+y\right)+1=f(x)^{3}+\frac{f(xy +x)}{f(x)} \Rightarrow &amp; f(x y+x)=f(x y)+f(x), \quad \forall x, y&gt;0 \end{aligned}] Do đó ta có: [f(x+y)=f(x)+f(y), \forall x, y&gt;0] +) Từ (10), (12) ta có $f\left(x^{3}\right)=f(x)^{3}$ +) Thay vào (9) ta có: [f\left(x^{3}+y\right)=f\left(x^{3}\right)+\frac{f(x y)}{f(x)}] Mà $f$ là hàm số cộng tính $\Rightarrow f(y)=\frac{f(x y)}{f(x)}, \forall x, y&gt;0$ $\Rightarrow f$ là hàm số nhân tính. Vậy ta có $f$ là hàm số vừa cộng tính vừa nhân tính $\Rightarrow f(x)=x, \forall x&gt;0$ (Đây là bài toán quen thuộc, lời giải chi tiết có ở Chương 4) Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Bài toán 4: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x+y f(x))+f(y-f(x))=2 x f(y) \hspace{2cm} (13)] $\hspace{8cm}$ ( Jio de Janeiro MO 2017) Đặt $a=f(0)$ Thay $x$ bởi 0 vào (13): $f(a y)+f(y-a)=0$ $\quad$ (14) Trường hợp 1: $a=0$, Từ (14) ta có $f(y)=0, \forall y \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $a \neq 0$ +) Trong (13) thay $y$ bởi 0 ta có: $ f(x)+f(-f(x))=2 a x \quad$ (15) [\Rightarrow\left{\begin{array}{l} f \; \text{là đơn ánh }\left(\text { do } a \neq 0\right) f(-a)=-a \quad \text {(thay x bởi 0 vào (15) )} \end{array}\right.] +) Trong (13) thay $x$ bởi $-a$ ta có: [f(-a-a y)+f(y+a)=-2 a f(y)] +) Trong (14) thay $y$ bởi $-y-1$ ta có : [\begin{aligned} &amp; f(-a-a y)+f(-y-1-a)=0 \Rightarrow &amp; f(y+a)-f(y-1-a)=-2 a f(y) \end{aligned}] Thay $y$ bởi $-a-\frac{1}{2}$ ta có $f\left(-a-\frac{1}{2}\right)=0$ +) Trong (14) thay $y$ bởi $\frac{-1}{2}$ ta có $f\left(\frac{-a}{2}\right)=0$ Do $f$ là đơn ánh nên suy ra $-a-\frac{1}{2}=\frac{-a}{2} \Leftrightarrow a=-1$ [\Rightarrow f\left(\frac{1}{2}\right)=0] +) Thay y bởi $\frac{1}{2}$ vào (13) ta có: [f\left(x+\frac{1}{2} f(x)\right)+f\left(\frac{1}{2}-f(x)\right)=0 \quad (16)] +) Thay $a$ bởi -1 vào (14) ta có : $f(-y)+f(y+1)=0$ Thay $y$ bởi $ f(x)-\frac{1}{2}: \quad f\left(-f(x)+\frac{1}{2}\right)+f\left(f(x)+\frac{1}{2}\right)=0$ Kết hợp với (16) ta có: $f\left(x+\frac{1}{2} f(x)\right)=f\left(f(x)+\frac{1}{2}\right)$ Vì hàm số $f$ là đơn ánh nên ta có $x+\frac{1}{2} f(x)=f(x)+\frac{1}{2}$ [\Leftrightarrow f(x)=2 x+1] Thử lại ta thấy hàm số này thỏa mãn bài toán. Vậy có 2 hàm số thỏa mãn bài toán là $f(x)=0, \forall x \in \mathbb{R}$ và $f(x)=2 x+1, \forall x \in \mathbb{R}$ Bài toán 5: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R} $ thỏa mãn: [f(x-2 f(y))=5 f(x)-4 x-2 f(y) \quad (17)] $\hspace{7cm} $ (Chọn đội tuyển PTNK 2015) +) Thay $x$ bởi 0, $y$ bởi 0 ta có $f(-2 f(0))=3 f(0) \quad $ (18) +) Thay $x$ bởi $2 f(0)$, $y$ bởi 0 ta có: [\begin{aligned} f(0) &amp; =5 f(2 f(0) ) -8 f(0)-2 f(0) &amp; \Rightarrow 5 f(2 f(0))=11 f(0) \quad (19) \end{aligned}] +) Thay $x$ bởi $2 f(0)$, y bởi $-2 f(0)$ ta có: [f\left( 2 f(0)-2 f(-2 f(0))\right)=5 f(2 f(0))-8 f(0)-2 f(-2 f(0))] Kết hợp (18), (19) ta suy ra $f(-4 f(0))=-3 f(0) \quad$ (20) +) Thay $x$ bởi $-2 f(0)$, y bởi 0 ta có : [\begin{aligned} f(-4 f(0)) &amp; =5 f(-2 f(0)+8 f(0)-2 f(0) \Rightarrow-3 f(0) &amp; =21 f(0) \Leftrightarrow f(0) &amp; =0 \end{aligned}] +) Thay $y$ bởi 0 ta có: [\begin{aligned} &amp; f(x)=5 f(x)-4 x &amp; \Leftrightarrow f(x)=x \end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. 1.2: THẾ CÁC BIỂU THỨC CHỨA BIẾN Bài toán 6: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f\left(x+y f\left(x^{2}\right)\right)=f(x)+x f(x y) \quad (1)] $\hspace{10cm}$ (Azerbaijan TST 2017) Thay $x$ bởi 0 ta có : $f(y f(0))=f(0)$ Nếu $f(0) \neq 0$ ta có $f(y)=c, \forall y \in \mathbb{R}$ với c là hằng số. Thử lại thay vào (1) ta suy ra $c=0$ ( vô lí vì $f(0) \neq 0$ ) Do đó ta có $f(0)=0$ +) Thay $x$ bởi 1 ta có: $f(1+y f(1))=f(1)+f(y) \quad (2)$ Nếu $f(1) \neq 1$, thay y bởi $\frac{1}{1-f(1)}$ ta có $f(1)=0$ [\Rightarrow f(y)=f(1)=0, \forall y \in \mathbb{R}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Ta xét trường hợp $f(1)=1$ [\begin{aligned} &amp; \Rightarrow f(y+1)=f(y)+1, \quad \forall y \in \mathbb{R} \quad (3) &amp; \Rightarrow f(-1)=-1 \end{aligned}] +) Thay $x$ bởi 1 ta có : $f(y-1)=-1-f(-y)$ Kết hợp với (3) suy ra $f(-y)=-f(y), \forall y \in \mathbb{R}$ $\Rightarrow f$ là hàm số lẻ. Giả sử $\exists a \neq 0$ sao cho $f(a)=0$. Do $f$ là hàm số lẻ, không mất tính tổng quát ta giả sử $a &gt; 0$ +) Trong (1) thay $x$ bởi $\sqrt{a}$ : [\begin{aligned} &amp; f(\sqrt{a})=f(\sqrt{a})+\sqrt{a} \cdot f(y \sqrt{a}) &amp; \Rightarrow f(y)=0, \forall y \in \mathbb{R} \quad \text{(vô lí)} \end{aligned}] Vậy ta có $f(x)=0 \Leftrightarrow x=0$ Xet với $x \neq 0$, trong (1) thay $y$ bởi $\frac{y-x}{f(x)}$ ta có [f(y)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}\right) \quad (4)] +) Trong (1) thay $y$ bởi $\frac{y-x}{f\left(x^{2}\right)}+\frac{1}{x}$ với $x \neq 0$ ta có: [\begin{aligned} &amp; f\left(x+y-x+\frac{f\left(x^{2}\right)}{x}\right)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}+1\right) \Leftrightarrow &amp; f\left(y+\frac{f\left(x^{2}\right)}{x}\right)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}\right)+x\left( \text{ do (3) }\right) \end{aligned}] Từ (4) ta suy ra $f\left(y+\frac{f\left(x^{2}\right)}{x}\right)=f(y)+x, \quad \forall x \neq 0$ Thay $x$ bởi $-f(y)$ với $y \neq 0$ ta có : [f\left(y+\frac{f\left(f(y)^{2}\right)}{-f(y)}\right)=0] Do $f(x)=0 \Leftrightarrow x=0$ [\Rightarrow f\left(f(y)^{2}\right)=y f(y) \quad (6)] +) Trong (5) thay $x$ bởi $f(x)$ với $x \neq 0$ ta có: [f\left(y+\frac{f\left(f(x)^{2}\right)}{f(x)}\right)=f(y)+f(x), \forall x, y \neq 0] Từ (6) ta suy ra $f(x+y)=f(x)+f(y), \forall x, y \neq 0$ Do $f$ là hàm số lẻ, $f(0)=0$ nên có thể suy ra được [f(x+y)=f(x)+f(y), \quad \forall x, y \in \mathbb{R}] Kết hợp với (1) ta có: $ f(x)+x f(x y)=f(x)+f\left(y f\left(x^{2}\right)\right)$ [\Leftrightarrow x f(x y)=f\left(y f\left(x^{2}\right)\right)] Thay $x$ bởi $f(x)$ ta có [\begin{aligned} f(x) f(y f(x)) &amp;= f\left(y f\left(f(x)^{2}\right)\right) \ &amp;=f(xy f(x)) \quad (\text{ do (6) }) \end{aligned}] Thay $y$ bởi $\frac{y}{f(x)}$ ta có $f(x y)=f(x) f(y)$ Do đó ta có hàm số $f$ vừa là hàm số cộng tính, vừa là hàm số nhân tính [\Rightarrow f(x)=x, \forall x \in \mathbb{R}] (Chứng minh chi tiết cho phần này đã có ở chương 4) Bài toán 7: Tìm tất cả hàm số $ f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x+2020 f(x y))=f(x)+2020 x f(y) \quad (7)] $\hspace{8cm} $(Chọn đội tuyển Hưng Yên 2020) +) Thay $x$, $y$ bởi $\frac{-1}{2020}$ ta có [f\left(\frac{-1}{2020}+2020 f\left(\frac{1}{2020^{2}}\right)\right)=0 \quad (8)] Đặt $c=\frac{-1}{2020}+2020 f\left(\frac{1}{2020^{2}}\right) \quad \Rightarrow f(c)=0$ +) Thay $x$ bởi $c$, $y$ bởi 1 vào (7) ta có [2020 c f(1)=0 \Leftrightarrow c f(1)=0] Ta xét hai trường hợp sau: Trường hợp 1: $f(1)=0$, thay $x$ bởi $\frac{1}{y}$ với $y \neq 0$ ta có $$ f(y)=0, \forall y \neq 0 $$ +) Thay $y$ bởi 0 vào (7) ta có [f(x+2020 f(0))=f(x)+2020 x f(0)] Chọn $x \neq 0, x \neq-2020 f(0)$ ta dễ có $f(0)=0$ Nên ta suy ra $f(x)=0, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $f(1) \neq 0 \Rightarrow c=0$ [\Rightarrow f(x)=0 \Leftrightarrow x=0] Nên từ (8) ta có $f\left(\frac{1}{2020^{2}}\right)=\frac{1}{2020^{2}}$ Với $x, y \neq 0$, đặt $ z=x+2020 y f\left(\frac{x}{2020^{2} y}\right)$ +) Trong (7) thay $x$ bởi $\frac{x}{y}$, $y$ bởi $\frac{1}{2020^{2}}$ ta có: [f\left(\frac{x}{y}+2020 f\left(\frac{x}{2020^{2} y}\right)\right)=f\left(\frac{x}{y}\right)+2020 \cdot \frac{x}{y} \cdot \frac{1}{2020^{2}}] [\implies f\left(\frac{z}{y}\right)=f\left(\frac{x}{y}\right)+\frac{x}{2020 y} \quad (9)] +) Thay $x$ bởi $y$, $y$ bởi $\frac{x}{y}$ ta có : [f(y+2020 f(x))=f(y)+2020 y f\left(\frac{x}{y}\right)] +) Thay $x$ bởi $y$, $y$ bởi $\frac{z}{y}$ ta có: [\begin{aligned} f(y+2020 f(z))&amp;=f(y)+2020 y f\left(\frac{z}{y}\right) &amp;= f(y)+2020 y f\left(\frac{x}{y}\right)+x \quad\left( \text{ do (9) }\right) \end{aligned}] [\Rightarrow f(y+2020 f(x))+x=f(y+2020 f(z))] Thay $y$ bởi $-2020 f(x)$ ta có [f(-2020 f(x)+2020 f(z))=x] $\Rightarrow f$ là toàn ánh +) Trong (8) thay $x$ bởi 1, $y$ bởi $x$ ta có: [f(1+2020 f(x))=f(1)+2020 f(x)] Do $f$ là toàn ánh nên $f(2020 x+1)=f(1)+2020 x, \forall x \in \mathbb{R}$ Đặt $k=f(1)-1$, ta suy ra $f(x)=x+k, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Vậy có tất cả hai hàm số thỏa mãn bài toán đó là $f(x)=0, \forall x \in \mathbb{R}$ và $f(x)=x, \forall x \in \mathbb{R}$ Bài toán 8: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x f(y)-f(x))=2 f(x) +x y \quad (10)] $\hspace{12cm}$ (VMO 2017) +) Trong (10) thay $x$ bởi 1 : [f(f(y)-f(1))=2 f(1)+y] Đây là phương trình hàm có biến tự do $y$ ở vế phải nên ta dễ chứng minh được $f$ là song ánh. [\Rightarrow \exists c \in \mathbb{R} \mid f(c)=0] +) Thay $x$ bởi $c$, $y$ bởi 0 ta có : [f(c f(0))=0] Mà ta có $f(c)=0$, $f$ là song ánh $\Rightarrow c f(0)=c$ [\Rightarrow\left[\begin{array}{l} c=0 f(0)=1 \end{array}\right.] Trường hợp 1: $c=0 \Rightarrow f(0)=0$ Thay $y$ bởi 0 ta có: $f(-f(x))=2 f(x)$ Do $f$ là song ánh $\Rightarrow f(x)=-2 x, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này không thỏa mãn bài toán. Trường hợp 2: $c \neq 0 \Rightarrow f(0)=1$ +) Thay $x$ bởi $c$, $y$ bởi $c: \quad f(0)=c^{2}$ [\Rightarrow c^{2}=1] +) Thay $x$ bởi 0, $y$ bởi $c: \quad f(-1)=2$ [\Rightarrow c=1 \text {, ta có } f(1)=0] +) Thay $y$ bởi $\frac{1-2 f(x)}{x}$ với $x \neq 0$ ta có: [f\left(x f\left(\frac{1-2 f(x)}{x}\right)-f(x)\right)=1] Do $f$ là song ánh $\Rightarrow x f\left(\frac{1-2 f(x)}{x}\right)-f(x)=0$ [\Leftrightarrow f\left(\frac{1-2 f(x)}{x}\right)=\frac{f(x)}{x}, \forall x \neq 0] +) Thay $x$ bởi $\frac{1-2 f(x)}{x}$ ta có [f\left(\frac{1-2 f(x)}{x} \cdot f(y)-\frac{f(x)}{x}\right)=\frac{1-2 f(x)}{x} \cdot y+\frac{2 f(x)}{x}] Thay $y$ bởi 1 suy ra: $f\left(\frac{-f(x)}{x}\right)=\frac{1}{x}, \forall x \neq 0$ +) Thay $y$ bởi $\frac{-f(x)}{x}$ ta có : [\begin{aligned} &amp; f\left(x \cdot \frac{1}{x}-f(x)\right)=2 f(x)-f(x) &amp; \Leftrightarrow f(1-f(x))=f(x), \quad \forall x \neq 0 \end{aligned}] Do $f$ là song ánh, $f(0)=1$ nên ta có $f(1-x)=x, \forall x \neq 1$ [\Leftrightarrow f(x)=1-x, \forall x \neq 0] Kết hợp $f(0)=1$ nên ta có $f(x)=1-x, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán." />
+<meta property="og:description" content="Trong rất nhiều bài toán, việc sử dụng những phép thế hợp lí là mấu chốt để giải quyết bài toán. Trong chương 1, tôi xin giới thiệu một số phép thế thường được sử dụng để giải phương trình hàm. Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là THẾ CÁC GIÁ TRỊ ĐẶC BIỆTvà THẾ CÁC BIỂU THỨC CHỨA BIẾN. 1.1: THẾ CÁC GIÁ TRỊ ĐẶC BIỆT Bài toán 1: Tìm tất cả hàm số \(f \colon \mathbb{R} \to \mathbb{R}\) thỏa mãn: [f(x-1) f\left(y^{2}\right)=y f(x y)-y f(y), \forall x, y \in \mathbb{R} \tag{1}] $ \hspace{8.5cm} $ (Chọn đội tuyển KHTN 2015) +) Trong (1) thay \(x\) bởi 1, \(y\) bởi 0 ta có : [f(0)^{2}=0 \Leftrightarrow f(0)=0] +) Trong (1) thay \(x\) bởi 0 , \(y\) bởi 1 ta có : [\begin{aligned} &amp; f(-1) f(1)=-f(1) \Leftrightarrow &amp; {\left[\begin{array}{l} f(1)=0 f(-1)=-1 \end{array}\right.} \end{aligned}] +) Nếu \(f(1)=0\), trong (1) thay \(y\) bởi 1 ta có [f(x)=0, \quad \forall x \in \mathbb{R}] +) Nếu \(f(-1) = -1\), Trong (1) thay \(x\) bởi 0 ta có: [\begin{aligned} &amp; f\left(y^{2}\right)=y f(y) \tag{2} \Rightarrow &amp; f(1)=-f(-1)=1 \end{aligned}] +) Tư (1), (2) ta có: [f(x-1) f(y)=f(x y)-f(y), \forall y \neq 0] Kết hợp $f(0)=0$ ta có [f(x-1) f(y)=f(x y)-f(y), \forall x, y \in \mathbb{R} \tag{3}] +) Trong (1) thay y bởi 1 ta có [f(x-1)=f(x)-1 \tag{4}] +) Từ $(3),(4)$ ta có $f(x y)=f(x) f(y), \forall x, y \in \mathbb{R}$ [\Rightarrow f\left(x^{2}\right)=f(x)^{2} \tag{5}] Từ (2), (5) suy ra $f(x)^{2}=x f(x)$ [\Leftrightarrow\left[\begin{array}{l} f(x)=x, f(x)=0, \end{array}, \forall x \in \mathbb{R}\right.] Nếu tồn tại $ a, b \neq 0$ sao cho [\left{\begin{array}{l}f(a)=0 \ f(b)=b\end{array}\right.] Từ (4) ta có $f(a-1)=-1$ Từ (5) ta có $f((a-1) b)=f(a-1) f(b)=-b$ Mà $b \neq 0 \Rightarrow(a-1) b=-b \Rightarrow a=0$ \; (vô lí) Nên ta có [\left[\begin{array}{l}f(x)=x, \forall x \in \mathbb{R} f(x)=0, \forall x \in \mathbb{R}\end{array}\right.] Thử lại ta thấy 2 hàm số này đều thỏa mãn điều kiện bài toán. Bài toán 2: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x f(x)+f(x) f(y)+y-1)=f(x f(x)+x y)+y-1 \tag{6}] $\hspace{10cm}$ (Korea MO 2014) +) Trong (6) thay $x$ bởi $0$ ta có: [f(f(0) f(y)+y-1)=f(0)+y-1 \hspace{2cm} (7)] +) Trong (7) thay $y$ bởi $1-f(0)$ ta có: [f(f(0) f(1-f(0))-f(0))=0] Đặt $c=f(0) f(1-f(0))-f(0) \Rightarrow f(c)=0$ +) Trong (6) thay $x$ bởi $c$ ta có: [f(y-1)=f(c y)+y-1 \hspace{2cm} (8)] +) Trong (8) thay $y$ bởi 1 ta có: [f(0)=f(c)=0] +) Trong (6) thay $x$ bởi 0 ta có: [\begin{aligned} &amp; f(y-1)=y-1 \Rightarrow &amp; f(x)=x, \forall x \in \mathbb{R} \end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Bài toán 3: Tìm tất cả hàm số $f \colon \mathbb{R^{+}} \to \mathbb{R^{+}}$ thỏa mãn: [f\left(x^{3}+y\right)=f(x)^{3}+\frac{f(x y)}{f(x)}, \forall x, y&gt;0 \hspace{2cm} (9)] $\hspace{9cm}$ (Chọn đội tuyển KHTN 2009) Đặt $f(1)=a \quad (a&gt;0)$ +) Trong (9) thay $y$ bởi 1 ta có: [f\left(x^{3}+1\right)=f\left(x^{3}\right)+1 \hspace{2cm} (10)] +) Trong (9) thay $x$ bởi 1 ta có : [f(y+1)=f(1)^{3}+1 \hspace{2cm} (11)] Sử dụng (10), (11) ta lần lượt tính được : [\begin{aligned} &amp; f(2)=a^{3}+1 &amp; f(3)=a^{3}+\frac{a^{3}+1}{a}=a^{3}+a^{2}+\frac{1}{a} &amp; f(9)=f(2)^{3}+1=\left(a^{3}+1\right)^{3}+1=a^{9}+3 a^{6}+3 a^{3}+2 \end{aligned}] Mặt khác ta có: [\begin{aligned} &amp; f(y+8)=a^{3}+\frac{f(y+7)}{a}=a^{3}+\frac{1}{a}\left(a^{3}+\frac{f(y+6)}{a}\right) &amp; =a^{3}+a^{2}+\frac{1}{a^{2}}\left(a^{3}+\frac{f(y+5)}{a}\right) &amp; =a^{3}+a^{2}+a+\frac{1}{a^{3}}\left(a^{3}+\frac{f(y+4)}{a}\right) &amp; =\ldots &amp; =a^{3}+a^{2}+a+1+\frac{1}{a}+\frac{1}{a^{2}}+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{f(y)}{a^{8}} \end{aligned}] [\begin{aligned} &amp; \Rightarrow f(9)=a^{3}+a^{2}+\ldots+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{1}{a^{7}} &amp; \Rightarrow a^{9}+3 a^{6}+3 a^{3}+2=a^{3}+a^{2}+\cdots+\frac{1}{a^{3}}+\frac{1}{a^{4}}+\frac{1}{a^{7}} \end{aligned}] [\begin{aligned} &amp; \Rightarrow a^{16}+3 a^{13}+3 a^{10}+2 a^{7}=a^{10}+a^{9}+\ldots+a^{3}+1 &amp; \Leftrightarrow a^{16}+3 a^{13}+2 a^{10}+a^{7}=a^{9}+a^{8}+a^{6}+a^{5}+a^{4}+a^{3}+1 \end{aligned}] Nếu $a&gt;1$ ta có [a^{16}&gt;a^{9}, \quad 3 a^{13}&gt;a^{8}+a^{6}+a^{5}] [2 a^{10}&gt;a^{4}+a^{3}, \quad a^{7}&gt;1] Nếu $a&lt;1$, ta có [a^{16}&lt;a^{9}, \quad 3 a^{13}&lt;a^{8}+a^{6}+a^{5}] [2 a^{10}&lt;a^{4}+a^{3}, \quad a^{7}&lt;1] Do đó ta có $a=1$, thay vào (11) ta có [f(y+1)=f(y)+1, \quad \forall y&gt;0 \hspace{2cm} (12)] +) Trong (9) thay $y$ bởi $y+1$ ta có: [\begin{aligned} &amp; f\left(x^{3}+y+1\right)=f(x)^{3}+\frac{f(x y+x)}{f(x)} \Rightarrow &amp; f\left(x^{3}+y\right)+1=f(x)^{3}+\frac{f(xy +x)}{f(x)} \Rightarrow &amp; f(x y+x)=f(x y)+f(x), \quad \forall x, y&gt;0 \end{aligned}] Do đó ta có: [f(x+y)=f(x)+f(y), \forall x, y&gt;0] +) Từ (10), (12) ta có $f\left(x^{3}\right)=f(x)^{3}$ +) Thay vào (9) ta có: [f\left(x^{3}+y\right)=f\left(x^{3}\right)+\frac{f(x y)}{f(x)}] Mà $f$ là hàm số cộng tính $\Rightarrow f(y)=\frac{f(x y)}{f(x)}, \forall x, y&gt;0$ $\Rightarrow f$ là hàm số nhân tính. Vậy ta có $f$ là hàm số vừa cộng tính vừa nhân tính $\Rightarrow f(x)=x, \forall x&gt;0$ (Đây là bài toán quen thuộc, lời giải chi tiết có ở Chương 4) Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Bài toán 4: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x+y f(x))+f(y-f(x))=2 x f(y) \hspace{2cm} (13)] $\hspace{8cm}$ ( Jio de Janeiro MO 2017) Đặt $a=f(0)$ Thay $x$ bởi 0 vào (13): $f(a y)+f(y-a)=0$ $\quad$ (14) Trường hợp 1: $a=0$, Từ (14) ta có $f(y)=0, \forall y \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $a \neq 0$ +) Trong (13) thay $y$ bởi 0 ta có: $ f(x)+f(-f(x))=2 a x \quad$ (15) [\Rightarrow\left{\begin{array}{l} f \; \text{là đơn ánh }\left(\text { do } a \neq 0\right) f(-a)=-a \quad \text {(thay x bởi 0 vào (15) )} \end{array}\right.] +) Trong (13) thay $x$ bởi $-a$ ta có: [f(-a-a y)+f(y+a)=-2 a f(y)] +) Trong (14) thay $y$ bởi $-y-1$ ta có : [\begin{aligned} &amp; f(-a-a y)+f(-y-1-a)=0 \Rightarrow &amp; f(y+a)-f(y-1-a)=-2 a f(y) \end{aligned}] Thay $y$ bởi $-a-\frac{1}{2}$ ta có $f\left(-a-\frac{1}{2}\right)=0$ +) Trong (14) thay $y$ bởi $\frac{-1}{2}$ ta có $f\left(\frac{-a}{2}\right)=0$ Do $f$ là đơn ánh nên suy ra $-a-\frac{1}{2}=\frac{-a}{2} \Leftrightarrow a=-1$ [\Rightarrow f\left(\frac{1}{2}\right)=0] +) Thay y bởi $\frac{1}{2}$ vào (13) ta có: [f\left(x+\frac{1}{2} f(x)\right)+f\left(\frac{1}{2}-f(x)\right)=0 \quad (16)] +) Thay $a$ bởi -1 vào (14) ta có : $f(-y)+f(y+1)=0$ Thay $y$ bởi $ f(x)-\frac{1}{2}: \quad f\left(-f(x)+\frac{1}{2}\right)+f\left(f(x)+\frac{1}{2}\right)=0$ Kết hợp với (16) ta có: $f\left(x+\frac{1}{2} f(x)\right)=f\left(f(x)+\frac{1}{2}\right)$ Vì hàm số $f$ là đơn ánh nên ta có $x+\frac{1}{2} f(x)=f(x)+\frac{1}{2}$ [\Leftrightarrow f(x)=2 x+1] Thử lại ta thấy hàm số này thỏa mãn bài toán. Vậy có 2 hàm số thỏa mãn bài toán là $f(x)=0, \forall x \in \mathbb{R}$ và $f(x)=2 x+1, \forall x \in \mathbb{R}$ Bài toán 5: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R} $ thỏa mãn: [f(x-2 f(y))=5 f(x)-4 x-2 f(y) \quad (17)] $\hspace{7cm} $ (Chọn đội tuyển PTNK 2015) +) Thay $x$ bởi 0, $y$ bởi 0 ta có $f(-2 f(0))=3 f(0) \quad $ (18) +) Thay $x$ bởi $2 f(0)$, $y$ bởi 0 ta có: [\begin{aligned} f(0) &amp; =5 f(2 f(0) ) -8 f(0)-2 f(0) &amp; \Rightarrow 5 f(2 f(0))=11 f(0) \quad (19) \end{aligned}] +) Thay $x$ bởi $2 f(0)$, y bởi $-2 f(0)$ ta có: [f\left( 2 f(0)-2 f(-2 f(0))\right)=5 f(2 f(0))-8 f(0)-2 f(-2 f(0))] Kết hợp (18), (19) ta suy ra $f(-4 f(0))=-3 f(0) \quad$ (20) +) Thay $x$ bởi $-2 f(0)$, y bởi 0 ta có : [\begin{aligned} f(-4 f(0)) &amp; =5 f(-2 f(0)+8 f(0)-2 f(0) \Rightarrow-3 f(0) &amp; =21 f(0) \Leftrightarrow f(0) &amp; =0 \end{aligned}] +) Thay $y$ bởi 0 ta có: [\begin{aligned} &amp; f(x)=5 f(x)-4 x &amp; \Leftrightarrow f(x)=x \end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. 1.2: THẾ CÁC BIỂU THỨC CHỨA BIẾN Bài toán 6: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f\left(x+y f\left(x^{2}\right)\right)=f(x)+x f(x y) \quad (1)] $\hspace{10cm}$ (Azerbaijan TST 2017) Thay $x$ bởi 0 ta có : $f(y f(0))=f(0)$ Nếu $f(0) \neq 0$ ta có $f(y)=c, \forall y \in \mathbb{R}$ với c là hằng số. Thử lại thay vào (1) ta suy ra $c=0$ ( vô lí vì $f(0) \neq 0$ ) Do đó ta có $f(0)=0$ +) Thay $x$ bởi 1 ta có: $f(1+y f(1))=f(1)+f(y) \quad (2)$ Nếu $f(1) \neq 1$, thay y bởi $\frac{1}{1-f(1)}$ ta có $f(1)=0$ [\Rightarrow f(y)=f(1)=0, \forall y \in \mathbb{R}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Ta xét trường hợp $f(1)=1$ [\begin{aligned} &amp; \Rightarrow f(y+1)=f(y)+1, \quad \forall y \in \mathbb{R} \quad (3) &amp; \Rightarrow f(-1)=-1 \end{aligned}] +) Thay $x$ bởi 1 ta có : $f(y-1)=-1-f(-y)$ Kết hợp với (3) suy ra $f(-y)=-f(y), \forall y \in \mathbb{R}$ $\Rightarrow f$ là hàm số lẻ. Giả sử $\exists a \neq 0$ sao cho $f(a)=0$. Do $f$ là hàm số lẻ, không mất tính tổng quát ta giả sử $a &gt; 0$ +) Trong (1) thay $x$ bởi $\sqrt{a}$ : [\begin{aligned} &amp; f(\sqrt{a})=f(\sqrt{a})+\sqrt{a} \cdot f(y \sqrt{a}) &amp; \Rightarrow f(y)=0, \forall y \in \mathbb{R} \quad \text{(vô lí)} \end{aligned}] Vậy ta có $f(x)=0 \Leftrightarrow x=0$ Xet với $x \neq 0$, trong (1) thay $y$ bởi $\frac{y-x}{f(x)}$ ta có [f(y)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}\right) \quad (4)] +) Trong (1) thay $y$ bởi $\frac{y-x}{f\left(x^{2}\right)}+\frac{1}{x}$ với $x \neq 0$ ta có: [\begin{aligned} &amp; f\left(x+y-x+\frac{f\left(x^{2}\right)}{x}\right)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}+1\right) \Leftrightarrow &amp; f\left(y+\frac{f\left(x^{2}\right)}{x}\right)=f(x)+x f\left(\frac{x(y-x)}{f\left(x^{2}\right)}\right)+x\left( \text{ do (3) }\right) \end{aligned}] Từ (4) ta suy ra $f\left(y+\frac{f\left(x^{2}\right)}{x}\right)=f(y)+x, \quad \forall x \neq 0$ Thay $x$ bởi $-f(y)$ với $y \neq 0$ ta có : [f\left(y+\frac{f\left(f(y)^{2}\right)}{-f(y)}\right)=0] Do $f(x)=0 \Leftrightarrow x=0$ [\Rightarrow f\left(f(y)^{2}\right)=y f(y) \quad (6)] +) Trong (5) thay $x$ bởi $f(x)$ với $x \neq 0$ ta có: [f\left(y+\frac{f\left(f(x)^{2}\right)}{f(x)}\right)=f(y)+f(x), \forall x, y \neq 0] Từ (6) ta suy ra $f(x+y)=f(x)+f(y), \forall x, y \neq 0$ Do $f$ là hàm số lẻ, $f(0)=0$ nên có thể suy ra được [f(x+y)=f(x)+f(y), \quad \forall x, y \in \mathbb{R}] Kết hợp với (1) ta có: $ f(x)+x f(x y)=f(x)+f\left(y f\left(x^{2}\right)\right)$ [\Leftrightarrow x f(x y)=f\left(y f\left(x^{2}\right)\right)] Thay $x$ bởi $f(x)$ ta có [\begin{aligned} f(x) f(y f(x)) &amp;= f\left(y f\left(f(x)^{2}\right)\right) \ &amp;=f(xy f(x)) \quad (\text{ do (6) }) \end{aligned}] Thay $y$ bởi $\frac{y}{f(x)}$ ta có $f(x y)=f(x) f(y)$ Do đó ta có hàm số $f$ vừa là hàm số cộng tính, vừa là hàm số nhân tính [\Rightarrow f(x)=x, \forall x \in \mathbb{R}] (Chứng minh chi tiết cho phần này đã có ở chương 4) Bài toán 7: Tìm tất cả hàm số $ f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x+2020 f(x y))=f(x)+2020 x f(y) \quad (7)] $\hspace{8cm} $(Chọn đội tuyển Hưng Yên 2020) +) Thay $x$, $y$ bởi $\frac{-1}{2020}$ ta có [f\left(\frac{-1}{2020}+2020 f\left(\frac{1}{2020^{2}}\right)\right)=0 \quad (8)] Đặt $c=\frac{-1}{2020}+2020 f\left(\frac{1}{2020^{2}}\right) \quad \Rightarrow f(c)=0$ +) Thay $x$ bởi $c$, $y$ bởi 1 vào (7) ta có [2020 c f(1)=0 \Leftrightarrow c f(1)=0] Ta xét hai trường hợp sau: Trường hợp 1: $f(1)=0$, thay $x$ bởi $\frac{1}{y}$ với $y \neq 0$ ta có $$ f(y)=0, \forall y \neq 0 $$ +) Thay $y$ bởi 0 vào (7) ta có [f(x+2020 f(0))=f(x)+2020 x f(0)] Chọn $x \neq 0, x \neq-2020 f(0)$ ta dễ có $f(0)=0$ Nên ta suy ra $f(x)=0, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $f(1) \neq 0 \Rightarrow c=0$ [\Rightarrow f(x)=0 \Leftrightarrow x=0] Nên từ (8) ta có $f\left(\frac{1}{2020^{2}}\right)=\frac{1}{2020^{2}}$ Với $x, y \neq 0$, đặt $ z=x+2020 y f\left(\frac{x}{2020^{2} y}\right)$ +) Trong (7) thay $x$ bởi $\frac{x}{y}$, $y$ bởi $\frac{1}{2020^{2}}$ ta có: [f\left(\frac{x}{y}+2020 f\left(\frac{x}{2020^{2} y}\right)\right)=f\left(\frac{x}{y}\right)+2020 \cdot \frac{x}{y} \cdot \frac{1}{2020^{2}}] [\implies f\left(\frac{z}{y}\right)=f\left(\frac{x}{y}\right)+\frac{x}{2020 y} \quad (9)] +) Thay $x$ bởi $y$, $y$ bởi $\frac{x}{y}$ ta có : [f(y+2020 f(x))=f(y)+2020 y f\left(\frac{x}{y}\right)] +) Thay $x$ bởi $y$, $y$ bởi $\frac{z}{y}$ ta có: [\begin{aligned} f(y+2020 f(z))&amp;=f(y)+2020 y f\left(\frac{z}{y}\right) &amp;= f(y)+2020 y f\left(\frac{x}{y}\right)+x \quad\left( \text{ do (9) }\right) \end{aligned}] [\Rightarrow f(y+2020 f(x))+x=f(y+2020 f(z))] Thay $y$ bởi $-2020 f(x)$ ta có [f(-2020 f(x)+2020 f(z))=x] $\Rightarrow f$ là toàn ánh +) Trong (8) thay $x$ bởi 1, $y$ bởi $x$ ta có: [f(1+2020 f(x))=f(1)+2020 f(x)] Do $f$ là toàn ánh nên $f(2020 x+1)=f(1)+2020 x, \forall x \in \mathbb{R}$ Đặt $k=f(1)-1$, ta suy ra $f(x)=x+k, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Vậy có tất cả hai hàm số thỏa mãn bài toán đó là $f(x)=0, \forall x \in \mathbb{R}$ và $f(x)=x, \forall x \in \mathbb{R}$ Bài toán 8: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn: [f(x f(y)-f(x))=2 f(x) +x y \quad (10)] $\hspace{12cm}$ (VMO 2017) +) Trong (10) thay $x$ bởi 1 : [f(f(y)-f(1))=2 f(1)+y] Đây là phương trình hàm có biến tự do $y$ ở vế phải nên ta dễ chứng minh được $f$ là song ánh. [\Rightarrow \exists c \in \mathbb{R} \mid f(c)=0] +) Thay $x$ bởi $c$, $y$ bởi 0 ta có : [f(c f(0))=0] Mà ta có $f(c)=0$, $f$ là song ánh $\Rightarrow c f(0)=c$ [\Rightarrow\left[\begin{array}{l} c=0 f(0)=1 \end{array}\right.] Trường hợp 1: $c=0 \Rightarrow f(0)=0$ Thay $y$ bởi 0 ta có: $f(-f(x))=2 f(x)$ Do $f$ là song ánh $\Rightarrow f(x)=-2 x, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này không thỏa mãn bài toán. Trường hợp 2: $c \neq 0 \Rightarrow f(0)=1$ +) Thay $x$ bởi $c$, $y$ bởi $c: \quad f(0)=c^{2}$ [\Rightarrow c^{2}=1] +) Thay $x$ bởi 0, $y$ bởi $c: \quad f(-1)=2$ [\Rightarrow c=1 \text {, ta có } f(1)=0] +) Thay $y$ bởi $\frac{1-2 f(x)}{x}$ với $x \neq 0$ ta có: [f\left(x f\left(\frac{1-2 f(x)}{x}\right)-f(x)\right)=1] Do $f$ là song ánh $\Rightarrow x f\left(\frac{1-2 f(x)}{x}\right)-f(x)=0$ [\Leftrightarrow f\left(\frac{1-2 f(x)}{x}\right)=\frac{f(x)}{x}, \forall x \neq 0] +) Thay $x$ bởi $\frac{1-2 f(x)}{x}$ ta có [f\left(\frac{1-2 f(x)}{x} \cdot f(y)-\frac{f(x)}{x}\right)=\frac{1-2 f(x)}{x} \cdot y+\frac{2 f(x)}{x}] Thay $y$ bởi 1 suy ra: $f\left(\frac{-f(x)}{x}\right)=\frac{1}{x}, \forall x \neq 0$ +) Thay $y$ bởi $\frac{-f(x)}{x}$ ta có : [\begin{aligned} &amp; f\left(x \cdot \frac{1}{x}-f(x)\right)=2 f(x)-f(x) &amp; \Leftrightarrow f(1-f(x))=f(x), \quad \forall x \neq 0 \end{aligned}] Do $f$ là song ánh, $f(0)=1$ nên ta có $f(1-x)=x, \forall x \neq 1$ [\Leftrightarrow f(x)=1-x, \forall x \neq 0] Kết hợp $f(0)=1$ nên ta có $f(x)=1-x, \forall x \in \mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán." />
 <link rel="canonical" href="http://localhost:4000/posts/ch%C6%B0%C6%A1ng-1-part-1/" />
 <meta property="og:url" content="http://localhost:4000/posts/ch%C6%B0%C6%A1ng-1-part-1/" />
 <meta property="og:site_name" content="Phạm Ngọc Quân" />
@@ -45,7 +45,7 @@
 <meta property="twitter:title" content="CHƯƠNG 1 CÁC PHƯƠNG PHÁP THẾ GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 1)" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-12T12:44:23+07:00","datePublished":"2024-02-12T12:44:23+07:00","description":"Trong rất nhiều bài toán, việc sử dụng những phép thế hợp lí là mấu chốt để giải quyết bài toán. Trong chương 1, tôi xin giới thiệu một số phép thế thường được sử dụng để giải phương trình hàm. Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là Thế các giá trị đặc biệt và Thế các biểu thức chứa biến. 1.1: THẾ CÁC GIÁ TRỊ ĐẶC BIỆT Bài toán 1: Tìm tất cả hàm số \\(f \\colon \\mathbb{R} \\to \\mathbb{R}\\) thỏa mãn: [f(x-1) f\\left(y^{2}\\right)=y f(x y)-y f(y), \\forall x, y \\in \\mathbb{R} \\hspace{2cm} (1)] $ \\hspace{8.5cm} $ (Chọn đội tuyển KHTN 2015) +) Trong (1) thay \\(x\\) bởi 1, \\(y\\) bởi 0 ta có : [f(0)^{2}=0 \\Leftrightarrow f(0)=0] +) Trong (1) thay \\(x\\) bởi 0 , \\(y\\) bởi 1 ta có : [\\begin{aligned} &amp; f(-1) f(1)=-f(1) \\Leftrightarrow &amp; {\\left[\\begin{array}{l} f(1)=0 f(-1)=-1 \\end{array}\\right.} \\end{aligned}] +) Nếu \\(f(1)=0\\), trong (1) thay \\(y\\) bởi 1 ta có [f(x)=0, \\quad \\forall x \\in \\mathbb{R}] +) Nếu \\(f(-1) = -1\\), Trong (1) thay \\(x\\) bởi 0 ta có: [\\begin{aligned} &amp; f\\left(y^{2}\\right)=y f(y) \\hspace{2cm} (2) \\Rightarrow &amp; f(1)=-f(-1)=1 \\end{aligned}] +) Tư (1), (2) ta có: [f(x-1) f(y)=f(x y)-f(y), \\forall y \\neq 0] Kết hợp $f(0)=0$ ta có [f(x-1) f(y)=f(x y)-f(y), \\forall x, y \\in \\mathbb{R} \\hspace{2cm} (3)] +) Trong (1) thay y bởi 1 ta có [f(x-1)=f(x)-1 \\hspace{2cm} (4)] +) Từ $(3),(4)$ ta có $f(x y)=f(x) f(y), \\forall x, y \\in \\mathbb{R}$ [\\Rightarrow f\\left(x^{2}\\right)=f(x)^{2} \\hspace{2cm} (5)] Từ (2), (5) suy ra $f(x)^{2}=x f(x)$ [\\Leftrightarrow\\left[\\begin{array}{l} f(x)=x, f(x)=0, \\end{array}, \\forall x \\in \\mathbb{R}\\right.] Nếu tồn tại $ a, b \\neq 0$ sao cho [\\left{\\begin{array}{l}f(a)=0 \\ f(b)=b\\end{array}\\right.] Từ (4) ta có $f(a-1)=-1$ Từ (5) ta có $f((a-1) b)=f(a-1) f(b)=-b$ Mà $b \\neq 0 \\Rightarrow(a-1) b=-b \\Rightarrow a=0$ \\; (vô lí) Nên ta có [\\left[\\begin{array}{l}f(x)=x, \\forall x \\in \\mathbb{R} f(x)=0, \\forall x \\in \\mathbb{R}\\end{array}\\right.] Thử lại ta thấy 2 hàm số này đều thỏa mãn điều kiện bài toán. Bài toán 2: Tìm tất cả hàm số $f \\colon \\mathbb{R} \\to \\mathbb{R}$ thỏa mãn: [f(x f(x)+f(x) f(y)+y-1)=f(x f(x)+x y)+y-1 \\hspace{2cm} (6)] $\\hspace{10cm}$ (Korea MO 2014) +) Trong (6) thay $x$ bởi $0$ ta có: [f(f(0) f(y)+y-1)=f(0)+y-1 \\hspace{2cm} (7)] +) Trong (7) thay $y$ bởi $1-f(0)$ ta có: [f(f(0) f(1-f(0))-f(0))=0] Đặt $c=f(0) f(1-f(0))-f(0) \\Rightarrow f(c)=0$ +) Trong (6) thay $x$ bởi $c$ ta có: [f(y-1)=f(c y)+y-1 \\hspace{2cm} (8)] +) Trong (8) thay $y$ bởi 1 ta có: [f(0)=f(c)=0] +) Trong (6) thay $x$ bởi 0 ta có: [\\begin{aligned} &amp; f(y-1)=y-1 \\Rightarrow &amp; f(x)=x, \\forall x \\in \\mathbb{R} \\end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Bài toán 3: Tìm tất cả hàm số $f \\colon \\mathbb{R^{+}} \\to \\mathbb{R^{+}}$ thỏa mãn: [f\\left(x^{3}+y\\right)=f(x)^{3}+\\frac{f(x y)}{f(x)}, \\forall x, y&gt;0 \\hspace{2cm} (9)] $\\hspace{9cm}$ (Chọn đội tuyển KHTN 2009) Đặt $f(1)=a \\quad (a&gt;0)$ +) Trong (9) thay $y$ bởi 1 ta có: [f\\left(x^{3}+1\\right)=f\\left(x^{3}\\right)+1 \\hspace{2cm} (10)] +) Trong (9) thay $x$ bởi 1 ta có : [f(y+1)=f(1)^{3}+1 \\hspace{2cm} (11)] Sử dụng (10), (11) ta lần lượt tính được : [\\begin{aligned} &amp; f(2)=a^{3}+1 &amp; f(3)=a^{3}+\\frac{a^{3}+1}{a}=a^{3}+a^{2}+\\frac{1}{a} &amp; f(9)=f(2)^{3}+1=\\left(a^{3}+1\\right)^{3}+1=a^{9}+3 a^{6}+3 a^{3}+2 \\end{aligned}] Mặt khác ta có: [\\begin{aligned} &amp; f(y+8)=a^{3}+\\frac{f(y+7)}{a}=a^{3}+\\frac{1}{a}\\left(a^{3}+\\frac{f(y+6)}{a}\\right) &amp; =a^{3}+a^{2}+\\frac{1}{a^{2}}\\left(a^{3}+\\frac{f(y+5)}{a}\\right) &amp; =a^{3}+a^{2}+a+\\frac{1}{a^{3}}\\left(a^{3}+\\frac{f(y+4)}{a}\\right) &amp; =\\ldots &amp; =a^{3}+a^{2}+a+1+\\frac{1}{a}+\\frac{1}{a^{2}}+\\frac{1}{a^{3}}+\\frac{1}{a^{4}}+\\frac{f(y)}{a^{8}} \\end{aligned}] [\\begin{aligned} &amp; \\Rightarrow f(9)=a^{3}+a^{2}+\\ldots+\\frac{1}{a^{3}}+\\frac{1}{a^{4}}+\\frac{1}{a^{7}} &amp; \\Rightarrow a^{9}+3 a^{6}+3 a^{3}+2=a^{3}+a^{2}+\\cdots+\\frac{1}{a^{3}}+\\frac{1}{a^{4}}+\\frac{1}{a^{7}} \\end{aligned}] [\\begin{aligned} &amp; \\Rightarrow a^{16}+3 a^{13}+3 a^{10}+2 a^{7}=a^{10}+a^{9}+\\ldots+a^{3}+1 &amp; \\Leftrightarrow a^{16}+3 a^{13}+2 a^{10}+a^{7}=a^{9}+a^{8}+a^{6}+a^{5}+a^{4}+a^{3}+1 \\end{aligned}] Nếu $a&gt;1$ ta có [a^{16}&gt;a^{9}, \\quad 3 a^{13}&gt;a^{8}+a^{6}+a^{5}] [2 a^{10}&gt;a^{4}+a^{3}, \\quad a^{7}&gt;1] Nếu $a&lt;1$, ta có [a^{16}&lt;a^{9}, \\quad 3 a^{13}&lt;a^{8}+a^{6}+a^{5}] [2 a^{10}&lt;a^{4}+a^{3}, \\quad a^{7}&lt;1] Do đó ta có $a=1$, thay vào (11) ta có [f(y+1)=f(y)+1, \\quad \\forall y&gt;0 \\hspace{2cm} (12)] +) Trong (9) thay $y$ bởi $y+1$ ta có: [\\begin{aligned} &amp; f\\left(x^{3}+y+1\\right)=f(x)^{3}+\\frac{f(x y+x)}{f(x)} \\Rightarrow &amp; f\\left(x^{3}+y\\right)+1=f(x)^{3}+\\frac{f(xy +x)}{f(x)} \\Rightarrow &amp; f(x y+x)=f(x y)+f(x), \\quad \\forall x, y&gt;0 \\end{aligned}] Do đó ta có: [f(x+y)=f(x)+f(y), \\forall x, y&gt;0] +) Từ (10), (12) ta có $f\\left(x^{3}\\right)=f(x)^{3}$ +) Thay vào (9) ta có: [f\\left(x^{3}+y\\right)=f\\left(x^{3}\\right)+\\frac{f(x y)}{f(x)}] Mà $f$ là hàm số cộng tính $\\Rightarrow f(y)=\\frac{f(x y)}{f(x)}, \\forall x, y&gt;0$ $\\Rightarrow f$ là hàm số nhân tính. Vậy ta có $f$ là hàm số vừa cộng tính vừa nhân tính $\\Rightarrow f(x)=x, \\forall x&gt;0$ (Đây là bài toán quen thuộc, lời giải chi tiết có ở Chương 4) Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Bài toán 4: Tìm tất cả hàm số $f \\colon \\mathbb{R} \\to \\mathbb{R}$ thỏa mãn: [f(x+y f(x))+f(y-f(x))=2 x f(y) \\hspace{2cm} (13)] $\\hspace{8cm}$ ( Jio de Janeiro MO 2017) Đặt $a=f(0)$ Thay $x$ bởi 0 vào (13): $f(a y)+f(y-a)=0$ $\\quad$ (14) Trường hợp 1: $a=0$, Từ (14) ta có $f(y)=0, \\forall y \\in \\mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $a \\neq 0$ +) Trong (13) thay $y$ bởi 0 ta có: $ f(x)+f(-f(x))=2 a x \\quad$ (15) [\\Rightarrow\\left{\\begin{array}{l} f \\; \\text{là đơn ánh }\\left(\\text { do } a \\neq 0\\right) f(-a)=-a \\quad \\text {(thay x bởi 0 vào (15) )} \\end{array}\\right.] +) Trong (13) thay $x$ bởi $-a$ ta có: [f(-a-a y)+f(y+a)=-2 a f(y)] +) Trong (14) thay $y$ bởi $-y-1$ ta có : [\\begin{aligned} &amp; f(-a-a y)+f(-y-1-a)=0 \\Rightarrow &amp; f(y+a)-f(y-1-a)=-2 a f(y) \\end{aligned}] Thay $y$ bởi $-a-\\frac{1}{2}$ ta có $f\\left(-a-\\frac{1}{2}\\right)=0$ +) Trong (14) thay $y$ bởi $\\frac{-1}{2}$ ta có $f\\left(\\frac{-a}{2}\\right)=0$ Do $f$ là đơn ánh nên suy ra $-a-\\frac{1}{2}=\\frac{-a}{2} \\Leftrightarrow a=-1$ [\\Rightarrow f\\left(\\frac{1}{2}\\right)=0] +) Thay y bởi $\\frac{1}{2}$ vào (13) ta có: [f\\left(x+\\frac{1}{2} f(x)\\right)+f\\left(\\frac{1}{2}-f(x)\\right)=0 \\quad (16)] +) Thay $a$ bởi -1 vào (14) ta có : $f(-y)+f(y+1)=0$ Thay $y$ bởi $ f(x)-\\frac{1}{2}: \\quad f\\left(-f(x)+\\frac{1}{2}\\right)+f\\left(f(x)+\\frac{1}{2}\\right)=0$ Kết hợp với (16) ta có: $f\\left(x+\\frac{1}{2} f(x)\\right)=f\\left(f(x)+\\frac{1}{2}\\right)$ Vì hàm số $f$ là đơn ánh nên ta có $x+\\frac{1}{2} f(x)=f(x)+\\frac{1}{2}$ [\\Leftrightarrow f(x)=2 x+1] Thử lại ta thấy hàm số này thỏa mãn bài toán. Vậy có 2 hàm số thỏa mãn bài toán là $f(x)=0, \\forall x \\in \\mathbb{R}$ và $f(x)=2 x+1, \\forall x \\in \\mathbb{R}$ Bài toán 5: Tìm tất cả hàm số $f \\colon \\mathbb{R} \\to \\mathbb{R} $ thỏa mãn: [f(x-2 f(y))=5 f(x)-4 x-2 f(y) \\quad (17)] $\\hspace{7cm} $ (Chọn đội tuyển PTNK 2015) +) Thay $x$ bởi 0, $y$ bởi 0 ta có $f(-2 f(0))=3 f(0) \\quad $ (18) +) Thay $x$ bởi $2 f(0)$, $y$ bởi 0 ta có: [\\begin{aligned} f(0) &amp; =5 f(2 f(0) ) -8 f(0)-2 f(0) &amp; \\Rightarrow 5 f(2 f(0))=11 f(0) \\quad (19) \\end{aligned}] +) Thay $x$ bởi $2 f(0)$, y bởi $-2 f(0)$ ta có: [f\\left( 2 f(0)-2 f(-2 f(0))\\right)=5 f(2 f(0))-8 f(0)-2 f(-2 f(0))] Kết hợp (18), (19) ta suy ra $f(-4 f(0))=-3 f(0) \\quad$ (20) +) Thay $x$ bởi $-2 f(0)$, y bởi 0 ta có : [\\begin{aligned} f(-4 f(0)) &amp; =5 f(-2 f(0)+8 f(0)-2 f(0) \\Rightarrow-3 f(0) &amp; =21 f(0) \\Leftrightarrow f(0) &amp; =0 \\end{aligned}] +) Thay $y$ bởi 0 ta có: [\\begin{aligned} &amp; f(x)=5 f(x)-4 x &amp; \\Leftrightarrow f(x)=x \\end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. 1.2: THẾ CÁC BIỂU THỨC CHỨA BIẾN Bài toán 6: Tìm tất cả hàm số $f \\colon \\mathbb{R} \\to \\mathbb{R}$ thỏa mãn: [f\\left(x+y f\\left(x^{2}\\right)\\right)=f(x)+x f(x y) \\quad (1)] $\\hspace{10cm}$ (Azerbaijan TST 2017) Thay $x$ bởi 0 ta có : $f(y f(0))=f(0)$ Nếu $f(0) \\neq 0$ ta có $f(y)=c, \\forall y \\in \\mathbb{R}$ với c là hằng số. Thử lại thay vào (1) ta suy ra $c=0$ ( vô lí vì $f(0) \\neq 0$ ) Do đó ta có $f(0)=0$ +) Thay $x$ bởi 1 ta có: $f(1+y f(1))=f(1)+f(y) \\quad (2)$ Nếu $f(1) \\neq 1$, thay y bởi $\\frac{1}{1-f(1)}$ ta có $f(1)=0$ [\\Rightarrow f(y)=f(1)=0, \\forall y \\in \\mathbb{R}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Ta xét trường hợp $f(1)=1$ [\\begin{aligned} &amp; \\Rightarrow f(y+1)=f(y)+1, \\quad \\forall y \\in \\mathbb{R} \\quad (3) &amp; \\Rightarrow f(-1)=-1 \\end{aligned}] +) Thay $x$ bởi 1 ta có : $f(y-1)=-1-f(-y)$ Kết hợp với (3) suy ra $f(-y)=-f(y), \\forall y \\in \\mathbb{R}$ $\\Rightarrow f$ là hàm số lẻ. Giả sử $\\exists a \\neq 0$ sao cho $f(a)=0$. Do $f$ là hàm số lẻ, không mất tính tổng quát ta giả sử $a &gt; 0$ +) Trong (1) thay $x$ bởi $\\sqrt{a}$ : [\\begin{aligned} &amp; f(\\sqrt{a})=f(\\sqrt{a})+\\sqrt{a} \\cdot f(y \\sqrt{a}) &amp; \\Rightarrow f(y)=0, \\forall y \\in \\mathbb{R} \\quad \\text{(vô lí)} \\end{aligned}] Vậy ta có $f(x)=0 \\Leftrightarrow x=0$ Xet với $x \\neq 0$, trong (1) thay $y$ bởi $\\frac{y-x}{f(x)}$ ta có [f(y)=f(x)+x f\\left(\\frac{x(y-x)}{f\\left(x^{2}\\right)}\\right) \\quad (4)] +) Trong (1) thay $y$ bởi $\\frac{y-x}{f\\left(x^{2}\\right)}+\\frac{1}{x}$ với $x \\neq 0$ ta có: [\\begin{aligned} &amp; f\\left(x+y-x+\\frac{f\\left(x^{2}\\right)}{x}\\right)=f(x)+x f\\left(\\frac{x(y-x)}{f\\left(x^{2}\\right)}+1\\right) \\Leftrightarrow &amp; f\\left(y+\\frac{f\\left(x^{2}\\right)}{x}\\right)=f(x)+x f\\left(\\frac{x(y-x)}{f\\left(x^{2}\\right)}\\right)+x\\left( \\text{ do (3) }\\right) \\end{aligned}] Từ (4) ta suy ra $f\\left(y+\\frac{f\\left(x^{2}\\right)}{x}\\right)=f(y)+x, \\quad \\forall x \\neq 0$ Thay $x$ bởi $-f(y)$ với $y \\neq 0$ ta có : [f\\left(y+\\frac{f\\left(f(y)^{2}\\right)}{-f(y)}\\right)=0] Do $f(x)=0 \\Leftrightarrow x=0$ [\\Rightarrow f\\left(f(y)^{2}\\right)=y f(y) \\quad (6)] +) Trong (5) thay $x$ bởi $f(x)$ với $x \\neq 0$ ta có: [f\\left(y+\\frac{f\\left(f(x)^{2}\\right)}{f(x)}\\right)=f(y)+f(x), \\forall x, y \\neq 0] Từ (6) ta suy ra $f(x+y)=f(x)+f(y), \\forall x, y \\neq 0$ Do $f$ là hàm số lẻ, $f(0)=0$ nên có thể suy ra được [f(x+y)=f(x)+f(y), \\quad \\forall x, y \\in \\mathbb{R}] Kết hợp với (1) ta có: $ f(x)+x f(x y)=f(x)+f\\left(y f\\left(x^{2}\\right)\\right)$ [\\Leftrightarrow x f(x y)=f\\left(y f\\left(x^{2}\\right)\\right)] Thay $x$ bởi $f(x)$ ta có [\\begin{aligned} f(x) f(y f(x)) &amp;= f\\left(y f\\left(f(x)^{2}\\right)\\right) \\ &amp;=f(xy f(x)) \\quad (\\text{ do (6) }) \\end{aligned}] Thay $y$ bởi $\\frac{y}{f(x)}$ ta có $f(x y)=f(x) f(y)$ Do đó ta có hàm số $f$ vừa là hàm số cộng tính, vừa là hàm số nhân tính [\\Rightarrow f(x)=x, \\forall x \\in \\mathbb{R}] (Chứng minh chi tiết cho phần này đã có ở chương 4) Bài toán 7: Tìm tất cả hàm số $ f \\colon \\mathbb{R} \\to \\mathbb{R}$ thỏa mãn: [f(x+2020 f(x y))=f(x)+2020 x f(y) \\quad (7)] $\\hspace{8cm} $(Chọn đội tuyển Hưng Yên 2020) +) Thay $x$, $y$ bởi $\\frac{-1}{2020}$ ta có [f\\left(\\frac{-1}{2020}+2020 f\\left(\\frac{1}{2020^{2}}\\right)\\right)=0 \\quad (8)] Đặt $c=\\frac{-1}{2020}+2020 f\\left(\\frac{1}{2020^{2}}\\right) \\quad \\Rightarrow f(c)=0$ +) Thay $x$ bởi $c$, $y$ bởi 1 vào (7) ta có [2020 c f(1)=0 \\Leftrightarrow c f(1)=0] Ta xét hai trường hợp sau: Trường hợp 1: $f(1)=0$, thay $x$ bởi $\\frac{1}{y}$ với $y \\neq 0$ ta có $$ f(y)=0, \\forall y \\neq 0 $$ +) Thay $y$ bởi 0 vào (7) ta có [f(x+2020 f(0))=f(x)+2020 x f(0)] Chọn $x \\neq 0, x \\neq-2020 f(0)$ ta dễ có $f(0)=0$ Nên ta suy ra $f(x)=0, \\forall x \\in \\mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $f(1) \\neq 0 \\Rightarrow c=0$ [\\Rightarrow f(x)=0 \\Leftrightarrow x=0] Nên từ (8) ta có $f\\left(\\frac{1}{2020^{2}}\\right)=\\frac{1}{2020^{2}}$ Với $x, y \\neq 0$, đặt $ z=x+2020 y f\\left(\\frac{x}{2020^{2} y}\\right)$ +) Trong (7) thay $x$ bởi $\\frac{x}{y}$, $y$ bởi $\\frac{1}{2020^{2}}$ ta có: [f\\left(\\frac{x}{y}+2020 f\\left(\\frac{x}{2020^{2} y}\\right)\\right)=f\\left(\\frac{x}{y}\\right)+2020 \\cdot \\frac{x}{y} \\cdot \\frac{1}{2020^{2}}] [\\implies f\\left(\\frac{z}{y}\\right)=f\\left(\\frac{x}{y}\\right)+\\frac{x}{2020 y} \\quad (9)] +) Thay $x$ bởi $y$, $y$ bởi $\\frac{x}{y}$ ta có : [f(y+2020 f(x))=f(y)+2020 y f\\left(\\frac{x}{y}\\right)] +) Thay $x$ bởi $y$, $y$ bởi $\\frac{z}{y}$ ta có: [\\begin{aligned} f(y+2020 f(z))&amp;=f(y)+2020 y f\\left(\\frac{z}{y}\\right) &amp;= f(y)+2020 y f\\left(\\frac{x}{y}\\right)+x \\quad\\left( \\text{ do (9) }\\right) \\end{aligned}] [\\Rightarrow f(y+2020 f(x))+x=f(y+2020 f(z))] Thay $y$ bởi $-2020 f(x)$ ta có [f(-2020 f(x)+2020 f(z))=x] $\\Rightarrow f$ là toàn ánh +) Trong (8) thay $x$ bởi 1, $y$ bởi $x$ ta có: [f(1+2020 f(x))=f(1)+2020 f(x)] Do $f$ là toàn ánh nên $f(2020 x+1)=f(1)+2020 x, \\forall x \\in \\mathbb{R}$ Đặt $k=f(1)-1$, ta suy ra $f(x)=x+k, \\forall x \\in \\mathbb{R}$ Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Vậy có tất cả hai hàm số thỏa mãn bài toán đó là $f(x)=0, \\forall x \\in \\mathbb{R}$ và $f(x)=x, \\forall x \\in \\mathbb{R}$ Bài toán 8: Tìm tất cả hàm số $f \\colon \\mathbb{R} \\to \\mathbb{R}$ thỏa mãn: [f(x f(y)-f(x))=2 f(x) +x y \\quad (10)] $\\hspace{12cm}$ (VMO 2017) +) Trong (10) thay $x$ bởi 1 : [f(f(y)-f(1))=2 f(1)+y] Đây là phương trình hàm có biến tự do $y$ ở vế phải nên ta dễ chứng minh được $f$ là song ánh. [\\Rightarrow \\exists c \\in \\mathbb{R} \\mid f(c)=0] +) Thay $x$ bởi $c$, $y$ bởi 0 ta có : [f(c f(0))=0] Mà ta có $f(c)=0$, $f$ là song ánh $\\Rightarrow c f(0)=c$ [\\Rightarrow\\left[\\begin{array}{l} c=0 f(0)=1 \\end{array}\\right.] Trường hợp 1: $c=0 \\Rightarrow f(0)=0$ Thay $y$ bởi 0 ta có: $f(-f(x))=2 f(x)$ Do $f$ là song ánh $\\Rightarrow f(x)=-2 x, \\forall x \\in \\mathbb{R}$ Thử lại ta thấy hàm số này không thỏa mãn bài toán. Trường hợp 2: $c \\neq 0 \\Rightarrow f(0)=1$ +) Thay $x$ bởi $c$, $y$ bởi $c: \\quad f(0)=c^{2}$ [\\Rightarrow c^{2}=1] +) Thay $x$ bởi 0, $y$ bởi $c: \\quad f(-1)=2$ [\\Rightarrow c=1 \\text {, ta có } f(1)=0] +) Thay $y$ bởi $\\frac{1-2 f(x)}{x}$ với $x \\neq 0$ ta có: [f\\left(x f\\left(\\frac{1-2 f(x)}{x}\\right)-f(x)\\right)=1] Do $f$ là song ánh $\\Rightarrow x f\\left(\\frac{1-2 f(x)}{x}\\right)-f(x)=0$ [\\Leftrightarrow f\\left(\\frac{1-2 f(x)}{x}\\right)=\\frac{f(x)}{x}, \\forall x \\neq 0] +) Thay $x$ bởi $\\frac{1-2 f(x)}{x}$ ta có [f\\left(\\frac{1-2 f(x)}{x} \\cdot f(y)-\\frac{f(x)}{x}\\right)=\\frac{1-2 f(x)}{x} \\cdot y+\\frac{2 f(x)}{x}] Thay $y$ bởi 1 suy ra: $f\\left(\\frac{-f(x)}{x}\\right)=\\frac{1}{x}, \\forall x \\neq 0$ +) Thay $y$ bởi $\\frac{-f(x)}{x}$ ta có : [\\begin{aligned} &amp; f\\left(x \\cdot \\frac{1}{x}-f(x)\\right)=2 f(x)-f(x) &amp; \\Leftrightarrow f(1-f(x))=f(x), \\quad \\forall x \\neq 0 \\end{aligned}] Do $f$ là song ánh, $f(0)=1$ nên ta có $f(1-x)=x, \\forall x \\neq 1$ [\\Leftrightarrow f(x)=1-x, \\forall x \\neq 0] Kết hợp $f(0)=1$ nên ta có $f(x)=1-x, \\forall x \\in \\mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán.","headline":"CHƯƠNG 1 CÁC PHƯƠNG PHÁP THẾ GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 1)","image":"/assets/img/ngocquan/math_img.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ch%C6%B0%C6%A1ng-1-part-1/"},"url":"http://localhost:4000/posts/ch%C6%B0%C6%A1ng-1-part-1/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-12T12:44:23+07:00","datePublished":"2024-02-12T12:44:23+07:00","description":"Trong rất nhiều bài toán, việc sử dụng những phép thế hợp lí là mấu chốt để giải quyết bài toán. Trong chương 1, tôi xin giới thiệu một số phép thế thường được sử dụng để giải phương trình hàm. Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là THẾ CÁC GIÁ TRỊ ĐẶC BIỆTvà THẾ CÁC BIỂU THỨC CHỨA BIẾN. 1.1: THẾ CÁC GIÁ TRỊ ĐẶC BIỆT Bài toán 1: Tìm tất cả hàm số \\(f \\colon \\mathbb{R} \\to \\mathbb{R}\\) thỏa mãn: [f(x-1) f\\left(y^{2}\\right)=y f(x y)-y f(y), \\forall x, y \\in \\mathbb{R} \\tag{1}] $ \\hspace{8.5cm} $ (Chọn đội tuyển KHTN 2015) +) Trong (1) thay \\(x\\) bởi 1, \\(y\\) bởi 0 ta có : [f(0)^{2}=0 \\Leftrightarrow f(0)=0] +) Trong (1) thay \\(x\\) bởi 0 , \\(y\\) bởi 1 ta có : [\\begin{aligned} &amp; f(-1) f(1)=-f(1) \\Leftrightarrow &amp; {\\left[\\begin{array}{l} f(1)=0 f(-1)=-1 \\end{array}\\right.} \\end{aligned}] +) Nếu \\(f(1)=0\\), trong (1) thay \\(y\\) bởi 1 ta có [f(x)=0, \\quad \\forall x \\in \\mathbb{R}] +) Nếu \\(f(-1) = -1\\), Trong (1) thay \\(x\\) bởi 0 ta có: [\\begin{aligned} &amp; f\\left(y^{2}\\right)=y f(y) \\tag{2} \\Rightarrow &amp; f(1)=-f(-1)=1 \\end{aligned}] +) Tư (1), (2) ta có: [f(x-1) f(y)=f(x y)-f(y), \\forall y \\neq 0] Kết hợp $f(0)=0$ ta có [f(x-1) f(y)=f(x y)-f(y), \\forall x, y \\in \\mathbb{R} \\tag{3}] +) Trong (1) thay y bởi 1 ta có [f(x-1)=f(x)-1 \\tag{4}] +) Từ $(3),(4)$ ta có $f(x y)=f(x) f(y), \\forall x, y \\in \\mathbb{R}$ [\\Rightarrow f\\left(x^{2}\\right)=f(x)^{2} \\tag{5}] Từ (2), (5) suy ra $f(x)^{2}=x f(x)$ [\\Leftrightarrow\\left[\\begin{array}{l} f(x)=x, f(x)=0, \\end{array}, \\forall x \\in \\mathbb{R}\\right.] Nếu tồn tại $ a, b \\neq 0$ sao cho [\\left{\\begin{array}{l}f(a)=0 \\ f(b)=b\\end{array}\\right.] Từ (4) ta có $f(a-1)=-1$ Từ (5) ta có $f((a-1) b)=f(a-1) f(b)=-b$ Mà $b \\neq 0 \\Rightarrow(a-1) b=-b \\Rightarrow a=0$ \\; (vô lí) Nên ta có [\\left[\\begin{array}{l}f(x)=x, \\forall x \\in \\mathbb{R} f(x)=0, \\forall x \\in \\mathbb{R}\\end{array}\\right.] Thử lại ta thấy 2 hàm số này đều thỏa mãn điều kiện bài toán. Bài toán 2: Tìm tất cả hàm số $f \\colon \\mathbb{R} \\to \\mathbb{R}$ thỏa mãn: [f(x f(x)+f(x) f(y)+y-1)=f(x f(x)+x y)+y-1 \\tag{6}] $\\hspace{10cm}$ (Korea MO 2014) +) Trong (6) thay $x$ bởi $0$ ta có: [f(f(0) f(y)+y-1)=f(0)+y-1 \\hspace{2cm} (7)] +) Trong (7) thay $y$ bởi $1-f(0)$ ta có: [f(f(0) f(1-f(0))-f(0))=0] Đặt $c=f(0) f(1-f(0))-f(0) \\Rightarrow f(c)=0$ +) Trong (6) thay $x$ bởi $c$ ta có: [f(y-1)=f(c y)+y-1 \\hspace{2cm} (8)] +) Trong (8) thay $y$ bởi 1 ta có: [f(0)=f(c)=0] +) Trong (6) thay $x$ bởi 0 ta có: [\\begin{aligned} &amp; f(y-1)=y-1 \\Rightarrow &amp; f(x)=x, \\forall x \\in \\mathbb{R} \\end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Bài toán 3: Tìm tất cả hàm số $f \\colon \\mathbb{R^{+}} \\to \\mathbb{R^{+}}$ thỏa mãn: [f\\left(x^{3}+y\\right)=f(x)^{3}+\\frac{f(x y)}{f(x)}, \\forall x, y&gt;0 \\hspace{2cm} (9)] $\\hspace{9cm}$ (Chọn đội tuyển KHTN 2009) Đặt $f(1)=a \\quad (a&gt;0)$ +) Trong (9) thay $y$ bởi 1 ta có: [f\\left(x^{3}+1\\right)=f\\left(x^{3}\\right)+1 \\hspace{2cm} (10)] +) Trong (9) thay $x$ bởi 1 ta có : [f(y+1)=f(1)^{3}+1 \\hspace{2cm} (11)] Sử dụng (10), (11) ta lần lượt tính được : [\\begin{aligned} &amp; f(2)=a^{3}+1 &amp; f(3)=a^{3}+\\frac{a^{3}+1}{a}=a^{3}+a^{2}+\\frac{1}{a} &amp; f(9)=f(2)^{3}+1=\\left(a^{3}+1\\right)^{3}+1=a^{9}+3 a^{6}+3 a^{3}+2 \\end{aligned}] Mặt khác ta có: [\\begin{aligned} &amp; f(y+8)=a^{3}+\\frac{f(y+7)}{a}=a^{3}+\\frac{1}{a}\\left(a^{3}+\\frac{f(y+6)}{a}\\right) &amp; =a^{3}+a^{2}+\\frac{1}{a^{2}}\\left(a^{3}+\\frac{f(y+5)}{a}\\right) &amp; =a^{3}+a^{2}+a+\\frac{1}{a^{3}}\\left(a^{3}+\\frac{f(y+4)}{a}\\right) &amp; =\\ldots &amp; =a^{3}+a^{2}+a+1+\\frac{1}{a}+\\frac{1}{a^{2}}+\\frac{1}{a^{3}}+\\frac{1}{a^{4}}+\\frac{f(y)}{a^{8}} \\end{aligned}] [\\begin{aligned} &amp; \\Rightarrow f(9)=a^{3}+a^{2}+\\ldots+\\frac{1}{a^{3}}+\\frac{1}{a^{4}}+\\frac{1}{a^{7}} &amp; \\Rightarrow a^{9}+3 a^{6}+3 a^{3}+2=a^{3}+a^{2}+\\cdots+\\frac{1}{a^{3}}+\\frac{1}{a^{4}}+\\frac{1}{a^{7}} \\end{aligned}] [\\begin{aligned} &amp; \\Rightarrow a^{16}+3 a^{13}+3 a^{10}+2 a^{7}=a^{10}+a^{9}+\\ldots+a^{3}+1 &amp; \\Leftrightarrow a^{16}+3 a^{13}+2 a^{10}+a^{7}=a^{9}+a^{8}+a^{6}+a^{5}+a^{4}+a^{3}+1 \\end{aligned}] Nếu $a&gt;1$ ta có [a^{16}&gt;a^{9}, \\quad 3 a^{13}&gt;a^{8}+a^{6}+a^{5}] [2 a^{10}&gt;a^{4}+a^{3}, \\quad a^{7}&gt;1] Nếu $a&lt;1$, ta có [a^{16}&lt;a^{9}, \\quad 3 a^{13}&lt;a^{8}+a^{6}+a^{5}] [2 a^{10}&lt;a^{4}+a^{3}, \\quad a^{7}&lt;1] Do đó ta có $a=1$, thay vào (11) ta có [f(y+1)=f(y)+1, \\quad \\forall y&gt;0 \\hspace{2cm} (12)] +) Trong (9) thay $y$ bởi $y+1$ ta có: [\\begin{aligned} &amp; f\\left(x^{3}+y+1\\right)=f(x)^{3}+\\frac{f(x y+x)}{f(x)} \\Rightarrow &amp; f\\left(x^{3}+y\\right)+1=f(x)^{3}+\\frac{f(xy +x)}{f(x)} \\Rightarrow &amp; f(x y+x)=f(x y)+f(x), \\quad \\forall x, y&gt;0 \\end{aligned}] Do đó ta có: [f(x+y)=f(x)+f(y), \\forall x, y&gt;0] +) Từ (10), (12) ta có $f\\left(x^{3}\\right)=f(x)^{3}$ +) Thay vào (9) ta có: [f\\left(x^{3}+y\\right)=f\\left(x^{3}\\right)+\\frac{f(x y)}{f(x)}] Mà $f$ là hàm số cộng tính $\\Rightarrow f(y)=\\frac{f(x y)}{f(x)}, \\forall x, y&gt;0$ $\\Rightarrow f$ là hàm số nhân tính. Vậy ta có $f$ là hàm số vừa cộng tính vừa nhân tính $\\Rightarrow f(x)=x, \\forall x&gt;0$ (Đây là bài toán quen thuộc, lời giải chi tiết có ở Chương 4) Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Bài toán 4: Tìm tất cả hàm số $f \\colon \\mathbb{R} \\to \\mathbb{R}$ thỏa mãn: [f(x+y f(x))+f(y-f(x))=2 x f(y) \\hspace{2cm} (13)] $\\hspace{8cm}$ ( Jio de Janeiro MO 2017) Đặt $a=f(0)$ Thay $x$ bởi 0 vào (13): $f(a y)+f(y-a)=0$ $\\quad$ (14) Trường hợp 1: $a=0$, Từ (14) ta có $f(y)=0, \\forall y \\in \\mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $a \\neq 0$ +) Trong (13) thay $y$ bởi 0 ta có: $ f(x)+f(-f(x))=2 a x \\quad$ (15) [\\Rightarrow\\left{\\begin{array}{l} f \\; \\text{là đơn ánh }\\left(\\text { do } a \\neq 0\\right) f(-a)=-a \\quad \\text {(thay x bởi 0 vào (15) )} \\end{array}\\right.] +) Trong (13) thay $x$ bởi $-a$ ta có: [f(-a-a y)+f(y+a)=-2 a f(y)] +) Trong (14) thay $y$ bởi $-y-1$ ta có : [\\begin{aligned} &amp; f(-a-a y)+f(-y-1-a)=0 \\Rightarrow &amp; f(y+a)-f(y-1-a)=-2 a f(y) \\end{aligned}] Thay $y$ bởi $-a-\\frac{1}{2}$ ta có $f\\left(-a-\\frac{1}{2}\\right)=0$ +) Trong (14) thay $y$ bởi $\\frac{-1}{2}$ ta có $f\\left(\\frac{-a}{2}\\right)=0$ Do $f$ là đơn ánh nên suy ra $-a-\\frac{1}{2}=\\frac{-a}{2} \\Leftrightarrow a=-1$ [\\Rightarrow f\\left(\\frac{1}{2}\\right)=0] +) Thay y bởi $\\frac{1}{2}$ vào (13) ta có: [f\\left(x+\\frac{1}{2} f(x)\\right)+f\\left(\\frac{1}{2}-f(x)\\right)=0 \\quad (16)] +) Thay $a$ bởi -1 vào (14) ta có : $f(-y)+f(y+1)=0$ Thay $y$ bởi $ f(x)-\\frac{1}{2}: \\quad f\\left(-f(x)+\\frac{1}{2}\\right)+f\\left(f(x)+\\frac{1}{2}\\right)=0$ Kết hợp với (16) ta có: $f\\left(x+\\frac{1}{2} f(x)\\right)=f\\left(f(x)+\\frac{1}{2}\\right)$ Vì hàm số $f$ là đơn ánh nên ta có $x+\\frac{1}{2} f(x)=f(x)+\\frac{1}{2}$ [\\Leftrightarrow f(x)=2 x+1] Thử lại ta thấy hàm số này thỏa mãn bài toán. Vậy có 2 hàm số thỏa mãn bài toán là $f(x)=0, \\forall x \\in \\mathbb{R}$ và $f(x)=2 x+1, \\forall x \\in \\mathbb{R}$ Bài toán 5: Tìm tất cả hàm số $f \\colon \\mathbb{R} \\to \\mathbb{R} $ thỏa mãn: [f(x-2 f(y))=5 f(x)-4 x-2 f(y) \\quad (17)] $\\hspace{7cm} $ (Chọn đội tuyển PTNK 2015) +) Thay $x$ bởi 0, $y$ bởi 0 ta có $f(-2 f(0))=3 f(0) \\quad $ (18) +) Thay $x$ bởi $2 f(0)$, $y$ bởi 0 ta có: [\\begin{aligned} f(0) &amp; =5 f(2 f(0) ) -8 f(0)-2 f(0) &amp; \\Rightarrow 5 f(2 f(0))=11 f(0) \\quad (19) \\end{aligned}] +) Thay $x$ bởi $2 f(0)$, y bởi $-2 f(0)$ ta có: [f\\left( 2 f(0)-2 f(-2 f(0))\\right)=5 f(2 f(0))-8 f(0)-2 f(-2 f(0))] Kết hợp (18), (19) ta suy ra $f(-4 f(0))=-3 f(0) \\quad$ (20) +) Thay $x$ bởi $-2 f(0)$, y bởi 0 ta có : [\\begin{aligned} f(-4 f(0)) &amp; =5 f(-2 f(0)+8 f(0)-2 f(0) \\Rightarrow-3 f(0) &amp; =21 f(0) \\Leftrightarrow f(0) &amp; =0 \\end{aligned}] +) Thay $y$ bởi 0 ta có: [\\begin{aligned} &amp; f(x)=5 f(x)-4 x &amp; \\Leftrightarrow f(x)=x \\end{aligned}] Thử lại ta thấy hàm số này thỏa mãn bài toán. 1.2: THẾ CÁC BIỂU THỨC CHỨA BIẾN Bài toán 6: Tìm tất cả hàm số $f \\colon \\mathbb{R} \\to \\mathbb{R}$ thỏa mãn: [f\\left(x+y f\\left(x^{2}\\right)\\right)=f(x)+x f(x y) \\quad (1)] $\\hspace{10cm}$ (Azerbaijan TST 2017) Thay $x$ bởi 0 ta có : $f(y f(0))=f(0)$ Nếu $f(0) \\neq 0$ ta có $f(y)=c, \\forall y \\in \\mathbb{R}$ với c là hằng số. Thử lại thay vào (1) ta suy ra $c=0$ ( vô lí vì $f(0) \\neq 0$ ) Do đó ta có $f(0)=0$ +) Thay $x$ bởi 1 ta có: $f(1+y f(1))=f(1)+f(y) \\quad (2)$ Nếu $f(1) \\neq 1$, thay y bởi $\\frac{1}{1-f(1)}$ ta có $f(1)=0$ [\\Rightarrow f(y)=f(1)=0, \\forall y \\in \\mathbb{R}] Thử lại ta thấy hàm số này thỏa mãn bài toán. Ta xét trường hợp $f(1)=1$ [\\begin{aligned} &amp; \\Rightarrow f(y+1)=f(y)+1, \\quad \\forall y \\in \\mathbb{R} \\quad (3) &amp; \\Rightarrow f(-1)=-1 \\end{aligned}] +) Thay $x$ bởi 1 ta có : $f(y-1)=-1-f(-y)$ Kết hợp với (3) suy ra $f(-y)=-f(y), \\forall y \\in \\mathbb{R}$ $\\Rightarrow f$ là hàm số lẻ. Giả sử $\\exists a \\neq 0$ sao cho $f(a)=0$. Do $f$ là hàm số lẻ, không mất tính tổng quát ta giả sử $a &gt; 0$ +) Trong (1) thay $x$ bởi $\\sqrt{a}$ : [\\begin{aligned} &amp; f(\\sqrt{a})=f(\\sqrt{a})+\\sqrt{a} \\cdot f(y \\sqrt{a}) &amp; \\Rightarrow f(y)=0, \\forall y \\in \\mathbb{R} \\quad \\text{(vô lí)} \\end{aligned}] Vậy ta có $f(x)=0 \\Leftrightarrow x=0$ Xet với $x \\neq 0$, trong (1) thay $y$ bởi $\\frac{y-x}{f(x)}$ ta có [f(y)=f(x)+x f\\left(\\frac{x(y-x)}{f\\left(x^{2}\\right)}\\right) \\quad (4)] +) Trong (1) thay $y$ bởi $\\frac{y-x}{f\\left(x^{2}\\right)}+\\frac{1}{x}$ với $x \\neq 0$ ta có: [\\begin{aligned} &amp; f\\left(x+y-x+\\frac{f\\left(x^{2}\\right)}{x}\\right)=f(x)+x f\\left(\\frac{x(y-x)}{f\\left(x^{2}\\right)}+1\\right) \\Leftrightarrow &amp; f\\left(y+\\frac{f\\left(x^{2}\\right)}{x}\\right)=f(x)+x f\\left(\\frac{x(y-x)}{f\\left(x^{2}\\right)}\\right)+x\\left( \\text{ do (3) }\\right) \\end{aligned}] Từ (4) ta suy ra $f\\left(y+\\frac{f\\left(x^{2}\\right)}{x}\\right)=f(y)+x, \\quad \\forall x \\neq 0$ Thay $x$ bởi $-f(y)$ với $y \\neq 0$ ta có : [f\\left(y+\\frac{f\\left(f(y)^{2}\\right)}{-f(y)}\\right)=0] Do $f(x)=0 \\Leftrightarrow x=0$ [\\Rightarrow f\\left(f(y)^{2}\\right)=y f(y) \\quad (6)] +) Trong (5) thay $x$ bởi $f(x)$ với $x \\neq 0$ ta có: [f\\left(y+\\frac{f\\left(f(x)^{2}\\right)}{f(x)}\\right)=f(y)+f(x), \\forall x, y \\neq 0] Từ (6) ta suy ra $f(x+y)=f(x)+f(y), \\forall x, y \\neq 0$ Do $f$ là hàm số lẻ, $f(0)=0$ nên có thể suy ra được [f(x+y)=f(x)+f(y), \\quad \\forall x, y \\in \\mathbb{R}] Kết hợp với (1) ta có: $ f(x)+x f(x y)=f(x)+f\\left(y f\\left(x^{2}\\right)\\right)$ [\\Leftrightarrow x f(x y)=f\\left(y f\\left(x^{2}\\right)\\right)] Thay $x$ bởi $f(x)$ ta có [\\begin{aligned} f(x) f(y f(x)) &amp;= f\\left(y f\\left(f(x)^{2}\\right)\\right) \\ &amp;=f(xy f(x)) \\quad (\\text{ do (6) }) \\end{aligned}] Thay $y$ bởi $\\frac{y}{f(x)}$ ta có $f(x y)=f(x) f(y)$ Do đó ta có hàm số $f$ vừa là hàm số cộng tính, vừa là hàm số nhân tính [\\Rightarrow f(x)=x, \\forall x \\in \\mathbb{R}] (Chứng minh chi tiết cho phần này đã có ở chương 4) Bài toán 7: Tìm tất cả hàm số $ f \\colon \\mathbb{R} \\to \\mathbb{R}$ thỏa mãn: [f(x+2020 f(x y))=f(x)+2020 x f(y) \\quad (7)] $\\hspace{8cm} $(Chọn đội tuyển Hưng Yên 2020) +) Thay $x$, $y$ bởi $\\frac{-1}{2020}$ ta có [f\\left(\\frac{-1}{2020}+2020 f\\left(\\frac{1}{2020^{2}}\\right)\\right)=0 \\quad (8)] Đặt $c=\\frac{-1}{2020}+2020 f\\left(\\frac{1}{2020^{2}}\\right) \\quad \\Rightarrow f(c)=0$ +) Thay $x$ bởi $c$, $y$ bởi 1 vào (7) ta có [2020 c f(1)=0 \\Leftrightarrow c f(1)=0] Ta xét hai trường hợp sau: Trường hợp 1: $f(1)=0$, thay $x$ bởi $\\frac{1}{y}$ với $y \\neq 0$ ta có $$ f(y)=0, \\forall y \\neq 0 $$ +) Thay $y$ bởi 0 vào (7) ta có [f(x+2020 f(0))=f(x)+2020 x f(0)] Chọn $x \\neq 0, x \\neq-2020 f(0)$ ta dễ có $f(0)=0$ Nên ta suy ra $f(x)=0, \\forall x \\in \\mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán. Trường hợp 2: $f(1) \\neq 0 \\Rightarrow c=0$ [\\Rightarrow f(x)=0 \\Leftrightarrow x=0] Nên từ (8) ta có $f\\left(\\frac{1}{2020^{2}}\\right)=\\frac{1}{2020^{2}}$ Với $x, y \\neq 0$, đặt $ z=x+2020 y f\\left(\\frac{x}{2020^{2} y}\\right)$ +) Trong (7) thay $x$ bởi $\\frac{x}{y}$, $y$ bởi $\\frac{1}{2020^{2}}$ ta có: [f\\left(\\frac{x}{y}+2020 f\\left(\\frac{x}{2020^{2} y}\\right)\\right)=f\\left(\\frac{x}{y}\\right)+2020 \\cdot \\frac{x}{y} \\cdot \\frac{1}{2020^{2}}] [\\implies f\\left(\\frac{z}{y}\\right)=f\\left(\\frac{x}{y}\\right)+\\frac{x}{2020 y} \\quad (9)] +) Thay $x$ bởi $y$, $y$ bởi $\\frac{x}{y}$ ta có : [f(y+2020 f(x))=f(y)+2020 y f\\left(\\frac{x}{y}\\right)] +) Thay $x$ bởi $y$, $y$ bởi $\\frac{z}{y}$ ta có: [\\begin{aligned} f(y+2020 f(z))&amp;=f(y)+2020 y f\\left(\\frac{z}{y}\\right) &amp;= f(y)+2020 y f\\left(\\frac{x}{y}\\right)+x \\quad\\left( \\text{ do (9) }\\right) \\end{aligned}] [\\Rightarrow f(y+2020 f(x))+x=f(y+2020 f(z))] Thay $y$ bởi $-2020 f(x)$ ta có [f(-2020 f(x)+2020 f(z))=x] $\\Rightarrow f$ là toàn ánh +) Trong (8) thay $x$ bởi 1, $y$ bởi $x$ ta có: [f(1+2020 f(x))=f(1)+2020 f(x)] Do $f$ là toàn ánh nên $f(2020 x+1)=f(1)+2020 x, \\forall x \\in \\mathbb{R}$ Đặt $k=f(1)-1$, ta suy ra $f(x)=x+k, \\forall x \\in \\mathbb{R}$ Thử lại ta thấy hàm số $f(x)=x$ thỏa mãn bài toán. Vậy có tất cả hai hàm số thỏa mãn bài toán đó là $f(x)=0, \\forall x \\in \\mathbb{R}$ và $f(x)=x, \\forall x \\in \\mathbb{R}$ Bài toán 8: Tìm tất cả hàm số $f \\colon \\mathbb{R} \\to \\mathbb{R}$ thỏa mãn: [f(x f(y)-f(x))=2 f(x) +x y \\quad (10)] $\\hspace{12cm}$ (VMO 2017) +) Trong (10) thay $x$ bởi 1 : [f(f(y)-f(1))=2 f(1)+y] Đây là phương trình hàm có biến tự do $y$ ở vế phải nên ta dễ chứng minh được $f$ là song ánh. [\\Rightarrow \\exists c \\in \\mathbb{R} \\mid f(c)=0] +) Thay $x$ bởi $c$, $y$ bởi 0 ta có : [f(c f(0))=0] Mà ta có $f(c)=0$, $f$ là song ánh $\\Rightarrow c f(0)=c$ [\\Rightarrow\\left[\\begin{array}{l} c=0 f(0)=1 \\end{array}\\right.] Trường hợp 1: $c=0 \\Rightarrow f(0)=0$ Thay $y$ bởi 0 ta có: $f(-f(x))=2 f(x)$ Do $f$ là song ánh $\\Rightarrow f(x)=-2 x, \\forall x \\in \\mathbb{R}$ Thử lại ta thấy hàm số này không thỏa mãn bài toán. Trường hợp 2: $c \\neq 0 \\Rightarrow f(0)=1$ +) Thay $x$ bởi $c$, $y$ bởi $c: \\quad f(0)=c^{2}$ [\\Rightarrow c^{2}=1] +) Thay $x$ bởi 0, $y$ bởi $c: \\quad f(-1)=2$ [\\Rightarrow c=1 \\text {, ta có } f(1)=0] +) Thay $y$ bởi $\\frac{1-2 f(x)}{x}$ với $x \\neq 0$ ta có: [f\\left(x f\\left(\\frac{1-2 f(x)}{x}\\right)-f(x)\\right)=1] Do $f$ là song ánh $\\Rightarrow x f\\left(\\frac{1-2 f(x)}{x}\\right)-f(x)=0$ [\\Leftrightarrow f\\left(\\frac{1-2 f(x)}{x}\\right)=\\frac{f(x)}{x}, \\forall x \\neq 0] +) Thay $x$ bởi $\\frac{1-2 f(x)}{x}$ ta có [f\\left(\\frac{1-2 f(x)}{x} \\cdot f(y)-\\frac{f(x)}{x}\\right)=\\frac{1-2 f(x)}{x} \\cdot y+\\frac{2 f(x)}{x}] Thay $y$ bởi 1 suy ra: $f\\left(\\frac{-f(x)}{x}\\right)=\\frac{1}{x}, \\forall x \\neq 0$ +) Thay $y$ bởi $\\frac{-f(x)}{x}$ ta có : [\\begin{aligned} &amp; f\\left(x \\cdot \\frac{1}{x}-f(x)\\right)=2 f(x)-f(x) &amp; \\Leftrightarrow f(1-f(x))=f(x), \\quad \\forall x \\neq 0 \\end{aligned}] Do $f$ là song ánh, $f(0)=1$ nên ta có $f(1-x)=x, \\forall x \\neq 1$ [\\Leftrightarrow f(x)=1-x, \\forall x \\neq 0] Kết hợp $f(0)=1$ nên ta có $f(x)=1-x, \\forall x \\in \\mathbb{R}$ Thử lại ta thấy hàm số này thỏa mãn bài toán.","headline":"CHƯƠNG 1 CÁC PHƯƠNG PHÁP THẾ GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 1)","image":"/assets/img/ngocquan/math_img.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/ch%C6%B0%C6%A1ng-1-part-1/"},"url":"http://localhost:4000/posts/ch%C6%B0%C6%A1ng-1-part-1/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -852,7 +852,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2210 words"
+  title="2203 words"
 >
   <em>12 min</em> read</span>
 
@@ -865,13 +865,13 @@
   <div class="content">
     <p>Trong rất nhiều bài toán, việc sử dụng những phép thế hợp lí là mấu chốt để giải quyết bài toán. Trong chương 1, tôi xin giới thiệu một số phép thế thường được sử dụng để giải phương trình hàm.
 <br />
-Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là Thế các giá trị đặc biệt và Thế các biểu thức chứa biến.</p>
+Trong bài viết phần 1 của chương 1 này, trước tiên sẽ bao gồm hai phương pháp thế đó là <strong>THẾ CÁC GIÁ TRỊ ĐẶC BIỆT</strong>và <strong>THẾ CÁC BIỂU THỨC CHỨA BIẾN</strong>.</p>
 
 <h1 id="11-thế-các-giá-trị-đặc-biệt">1.1: THẾ CÁC GIÁ TRỊ ĐẶC BIỆT</h1>
 
 <h2 id="bài-toán-1-tìm-tất-cả-hàm-số-f-colon-mathbbr-to-mathbbr-thỏa-mãn"><span class="me-2">Bài toán 1: Tìm tất cả hàm số \(f \colon \mathbb{R} \to \mathbb{R}\) thỏa mãn:</span><a href="#bài-toán-1-tìm-tất-cả-hàm-số-f-colon-mathbbr-to-mathbbr-thỏa-mãn" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-\[f(x-1) f\left(y^{2}\right)=y f(x y)-y f(y), \forall x, y \in \mathbb{R}    \hspace{2cm} (1)\]
+\[f(x-1) f\left(y^{2}\right)=y f(x y)-y f(y), \forall x, y \in \mathbb{R}    \tag{1}\]
 
 <p>$ \hspace{8.5cm} $ (Chọn đội tuyển KHTN 2015)</p>
 
@@ -896,7 +896,7 @@ f(-1)=-1
 <p>+) Nếu \(f(-1) = -1\), Trong (1) thay \(x\) bởi 0 ta có:</p>
 
 \[\begin{aligned}
-&amp; f\left(y^{2}\right)=y f(y)  \hspace{2cm} (2)\\
+&amp; f\left(y^{2}\right)=y f(y)  \tag{2}\\
 \Rightarrow &amp; f(1)=-f(-1)=1
 \end{aligned}\]
 
@@ -906,15 +906,15 @@ f(-1)=-1
 
 <p>Kết hợp $f(0)=0$ ta có</p>
 
-\[f(x-1) f(y)=f(x y)-f(y), \forall x, y \in \mathbb{R} \hspace{2cm} (3)\]
+\[f(x-1) f(y)=f(x y)-f(y), \forall x, y \in \mathbb{R} \tag{3}\]
 
 <p>+) Trong (1) thay y bởi 1 ta có</p>
 
-\[f(x-1)=f(x)-1   \hspace{2cm} (4)\]
+\[f(x-1)=f(x)-1   \tag{4}\]
 
 <p>+) Từ $(3),(4)$ ta có $f(x y)=f(x) f(y), \forall x, y \in \mathbb{R}$</p>
 
-\[\Rightarrow f\left(x^{2}\right)=f(x)^{2}   \hspace{2cm} (5)\]
+\[\Rightarrow f\left(x^{2}\right)=f(x)^{2}   \tag{5}\]
 
 <p>Từ (2), (5) suy ra $f(x)^{2}=x f(x)$</p>
 
@@ -945,7 +945,7 @@ f(x)=0, \forall x \in \mathbb{R}\end{array}\right.\]
 
 <h2 id="bài-toán-2-tìm-tất-cả-hàm-số-f-colon-mathbbr-to-mathbbr-thỏa-mãn"><span class="me-2">Bài toán 2: Tìm tất cả hàm số $f \colon \mathbb{R} \to \mathbb{R}$ thỏa mãn:</span><a href="#bài-toán-2-tìm-tất-cả-hàm-số-f-colon-mathbbr-to-mathbbr-thỏa-mãn" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-\[f(x f(x)+f(x) f(y)+y-1)=f(x f(x)+x y)+y-1  \hspace{2cm} (6)\]
+\[f(x f(x)+f(x) f(y)+y-1)=f(x f(x)+x y)+y-1 \tag{6}\]
 
 <p>$\hspace{10cm}$ (Korea MO 2014)</p>
 
@@ -1610,6 +1610,13 @@ f(0)=1
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/ch%C6%B0%C6%A1ng-2-part-1/">CHƯƠNG 2 CÁC KĨ THUẬT KHÁC GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 1)</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/ch%C6%B0%C6%A1ng-1-part-2/">CHƯƠNG 1 CÁC PHƯƠNG PHÁP THẾ GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 2)</a>
         </li>
       
@@ -1625,6 +1632,13 @@ f(0)=1
         
         <li class="text-truncate lh-lg">
           <a href="/posts/NgocQuan/">Hello World, I'm NgocQuan</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/l%E1%BB%9Di-n%C3%B3i-%C4%91%E1%BA%A7u/">LỜI NÓI ĐẦU</a>
         </li>
       
     </ul>
@@ -1698,10 +1712,6 @@ f(0)=1
     
     
     
-      
-        
-        
-
   
     
     
@@ -1767,6 +1777,70 @@ f(0)=1
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1854,7 +1928,171 @@ f(0)=1
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1995,55 +2233,6 @@ f(0)=1
     
     
       
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -2073,6 +2262,9 @@ f(0)=1
         <a class="post-tag btn btn-outline-primary" href="/tags/vmo/">vmo</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/vmo-2017/">VMO 2017</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/azerbaijan-tst-2017/">Azerbaijan TST 2017</a>
       
         
@@ -2086,9 +2278,6 @@ f(0)=1
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/ch%E1%BB%8Dn-%C4%91%E1%BB%99i-tuy%E1%BB%83n-ptnk-2015/">Chọn đội tuyển PTNK 2015</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/jio-de-janeiro-mo-2017/">Jio de Janeiro MO 2017</a>
       
     </div>
   </section>
@@ -2168,6 +2357,30 @@ f(0)=1
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -2195,11 +2408,11 @@ f(0)=1
 
 <time
   
-  data-ts="1707759093"
+  data-ts="1707883805"
   data-df="ll"
   
 >
-  Feb 13, 2024
+  Feb 14, 2024
 </time>
 
               <h4 class="pt-0 my-2">CHƯƠNG 1 CÁC PHƯƠNG PHÁP THẾ GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 2)</h4>
@@ -2221,7 +2434,7 @@ Tr...
         </article>
       
         <article class="col">
-          <a href="/posts/NgocQuan/" class="post-preview card h-100">
+          <a href="/posts/l%E1%BB%9Di-n%C3%B3i-%C4%91%E1%BA%A7u/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2233,14 +2446,14 @@ Tr...
 
 <time
   
-  data-ts="1675182265"
+  data-ts="1704062483"
   data-df="ll"
   
 >
-  Jan 31, 2023
+  Jan  1, 2024
 </time>
 
-              <h4 class="pt-0 my-2">Hello World, I'm NgocQuan</h4>
+              <h4 class="pt-0 my-2">LỜI NÓI ĐẦU</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2249,7 +2462,43 @@ Tr...
 
 
 
-                  Xin chào các bạn, mình là Quân và mình đã từng dự thi VMO 2021. Phương trình hàm là chủ đề yêu thích nhất của mình. Sau kì thi VMO 2021, mình đã dành thời gian viết cuốn sách “89 bài toán phương tr...
+                  Trong quá trình ôn thi VMO, tôi thường xuyên tìm kiếm những bài toán từ nhiều nguồn khác nhau để luyện tập mỗi ngày. Quá trình đó giúp tôi tích lũy được những kiến thức đa dạng về nhiều phần khác n...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/ch%C6%B0%C6%A1ng-2-part-1/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1708056605"
+  data-df="ll"
+  
+>
+  Feb 16, 2024
+</time>
+
+              <h4 class="pt-0 my-2">CHƯƠNG 2 CÁC KĨ THUẬT KHÁC GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 1)</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Trong chương hai này, tôi xin giới thiệu một số kĩ thuật khác cũng được sử dụng thường xuyên khi giải phương trình hàm, bao gồm điểm bất động, thêm biến, tính bằng hai cách, NQR, dãy số và sử dụng ...
                 </p>
               </div>
             </div>
@@ -2271,11 +2520,11 @@ Tr...
 
   
     <a
-      href="/posts/NgocQuan/"
+      href="/posts/l%E1%BB%9Di-n%C3%B3i-%C4%91%E1%BA%A7u/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Hello World, I'm NgocQuan</p>
+      <p>LỜI NÓI ĐẦU</p>
     </a>
   
 
@@ -2397,10 +2646,6 @@ Tr...
     
     
     
-      
-        
-        
-
   
     
     
@@ -2466,6 +2711,70 @@ Tr...
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2553,7 +2862,171 @@ Tr...
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2694,55 +3167,6 @@ Tr...
     
     
       
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -2772,6 +3196,9 @@ Tr...
         <a class="post-tag btn btn-outline-primary" href="/tags/vmo/">vmo</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/vmo-2017/">VMO 2017</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/azerbaijan-tst-2017/">Azerbaijan TST 2017</a>
       
         
@@ -2785,9 +3212,6 @@ Tr...
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/ch%E1%BB%8Dn-%C4%91%E1%BB%99i-tuy%E1%BB%83n-ptnk-2015/">Chọn đội tuyển PTNK 2015</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/jio-de-janeiro-mo-2017/">Jio de Janeiro MO 2017</a>
       
     </div>
   </section>
