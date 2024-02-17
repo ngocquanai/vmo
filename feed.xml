@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Phạm Ngọc Quân</title>
   <subtitle>Welcome to my page. Have a nice day! </subtitle>
-  <updated>2024-02-16T13:19:39+07:00</updated>
+  <updated>2024-02-17T21:06:17+07:00</updated>
   <author>
     <name>Pham Ngoc Quan</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,42 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>CHƯƠNG 2 CÁC KĨ THUẬT KHÁC GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 2)</title>
+    <link href="http://localhost:4000/posts/ch%C6%B0%C6%A1ng-2-part-2/" rel="alternate" type="text/html" title="CHƯƠNG 2 CÁC KĨ THUẬT KHÁC GIẢI PHƯƠNG TRÌNH HÀM (PHẦN 2)" />
+    <published>2024-02-16T11:10:05+07:00</published>
+  
+    <updated>2024-02-16T11:10:05+07:00</updated>
+  
+    <id>http://localhost:4000/posts/ch%C6%B0%C6%A1ng-2-part-2/</id>
+    <content src="http://localhost:4000/posts/ch%C6%B0%C6%A1ng-2-part-2/" />
+    <author>
+      <name>Pham Ngoc Quan</name>
+    </author>
+
+  
+    
+    <category term="Chương 2" />
+    
+    <category term="Phần 2" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Trong chương hai này, tôi xin giới thiệu một số kĩ thuật khác cũng được sử dụng thường xuyên khi giải phương trình hàm, bao gồm điểm bất động, thêm biến, tính bằng hai cách, NQR, dãy số và sử dụng bất đẳng thức. Những phương pháp này nếu sử dụng hợp lí sẽ là một bước quan trọng để chúng ta giải quyết các bài toán phương trình hàm. Trong phần 2 này, chúng ta sẽ cùng tìm hiểu hai phương pháp tiếp...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -167,40 +203,6 @@ Bài toán 1: Tìm tất cả hàm...
 
 
       Trong quá trình ôn thi VMO, tôi thường xuyên tìm kiếm những bài toán từ nhiều nguồn khác nhau để luyện tập mỗi ngày. Quá trình đó giúp tôi tích lũy được những kiến thức đa dạng về nhiều phần khác nhau để chuẩn bị cho kì thi VMO. Trong đó, tôi đặc biệt hứng thú với giải phương trình hàm và đó cũng là phần tôi chú trọng làm nhiều nhất. Tôi đã dành một lượng lớn thời gian để học và tìm hiểu về các...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Hello World, I'm NgocQuan</title>
-    <link href="http://localhost:4000/posts/NgocQuan/" rel="alternate" type="text/html" title="Hello World, I&amp;apos;m NgocQuan" />
-    <published>2023-01-31T23:24:25+07:00</published>
-  
-    <updated>2024-02-04T22:45:39+07:00</updated>
-  
-    <id>http://localhost:4000/posts/NgocQuan/</id>
-    <content src="http://localhost:4000/posts/NgocQuan/" />
-    <author>
-      <name>Pham Ngoc Quan</name>
-    </author>
-
-  
-    
-    <category term="blog post" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Xin chào các bạn, mình là Quân và mình đã từng dự thi VMO 2021. Phương trình hàm là chủ đề yêu thích nhất của mình. Sau kì thi VMO 2021, mình đã dành thời gian viết cuốn sách “89 bài toán phương trình hàm”. Hiện nay, chuyên ngành của mình là Data Science và mình không còn theo đuổi toán Olympic, tuy nhiên nhờ sự phát triển của công nghệ OCR(cụ thể hơn là chuyển chữ viết tay thành latex) nên mìn...
     </summary>
   
 
